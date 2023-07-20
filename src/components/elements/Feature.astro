@@ -1,0 +1,13 @@
+---
+const {feature} = Astro.props;
+---
+
+<section class={feature.class}>
+  <figure>
+    <img src={feature.image} class={feature.imageClass} alt={feature.imageAlt}/>
+</figure>
+<figcaption>
+  <h2>{feature.title}</h2>
+  <p>{feature.subtext}</p>
+</figcaption>
+</section>

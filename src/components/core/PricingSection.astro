@@ -1,42 +1,42 @@
 ---
 
 ---
-<section id="pricing" class="pricing center bg-red-50">
-  <article>
+<article id="pricing" class="pricing center bg-red-50">
+  <section class="title center">
     <h2>IO Forge Prices</h2>
     
-  </article>
-  <section class="pricing_container">
-
-    <article class="price">
-      <h2>Price</h2>
-      <p>SubText</p>
-      <figure>
-    </figure>
-    <figcaption>
-    </figcaption>
-  </article>
-
-    <article class="price">
-      <h2>Price</h2>
-      <p>SubText</p>
-      <figure>
-    </figure>
-    <figcaption>
-    </figcaption>
-  </article>
-
-    <article class="price">
-      <h2>Price</h2>
-      <p>SubText</p>
-      <figure>
-    </figure>
-    <figcaption>
-    </figcaption>
-  </article>
-  
   </section>
-</section>
+  <article class="pricing_container">
+
+    <section class="price">
+      <h3>Price</h3>
+      <p>SubText</p>
+      <figure>
+    </figure>
+    <figcaption>
+    </figcaption>
+  </section>
+
+    <section class="price">
+      <h3>Price</h3>
+      <p>SubText</p>
+      <figure>
+    </figure>
+    <figcaption>
+    </figcaption>
+  </section>
+
+    <section class="price">
+      <h3>Price</h3>
+      <p>SubText</p>
+      <figure>
+    </figure>
+    <figcaption>
+    </figcaption>
+  </section>
+  
+</article>
+</article>
 <style>
   .pricing_container{
   
@@ -54,10 +54,28 @@
   background: #444;
   border: 1px solid #555;
   display: flex;
+  flex-flow:column;
   align-items: center;
   justify-content: center;
   color: #AAA;
+  margin-bottom:20%;
 }
- 
+h3,p{
+  flex:auto;
+}
+@media screen and (max-width:1100px){
+  .price{
+    margin-bottom:60%;
+  }
+
+}
+
+@media screen and (max-width:650px) {
+  .price{
+    margin-bottom:80%;
+  }
+}
+
+
   
 </style>
