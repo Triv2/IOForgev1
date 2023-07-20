@@ -1,0 +1,23 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+---
+
+<header >
+	<nav class=" bg-slate-200">
+		<HeaderLink  href="/">Home</HeaderLink>
+		<HeaderLink  href="#about">About</HeaderLink>
+		<HeaderLink  href="#feature">Features</HeaderLink>
+		<HeaderLink  href="#product">Products</HeaderLink>
+    <HeaderLink  href="#pricing">Pricing</HeaderLink>
+		<HeaderLink  href="#contact">Contact</HeaderLink>
+	</nav>
+</header >
+<style>
+	nav{
+		display:flex;
+		justify-content:flex-end;
+		gap:10px;
+		align-content:flex-end;
+		padding-right:10px;
+	}
+</style>
