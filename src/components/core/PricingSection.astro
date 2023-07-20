@@ -6,7 +6,7 @@
     <h2>IO Forge Prices</h2>
     
   </article>
-  <section class="pricing_container center">
+  <section class="pricing_container">
 
     <article class="price">
       <h2>Price</h2>
@@ -38,5 +38,26 @@
   </section>
 </section>
 <style>
+  .pricing_container{
+  
+  padding:5%;
+  display:grid;
+  grid-template-columns: 30% 30% 30%;
+  /* grid-template-rows: 30% 30% 30%;  */
+  column-gap: 5%;
+  row-gap: 5%;
+}
+
+
+
+.price {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}
+ 
   
 </style>
