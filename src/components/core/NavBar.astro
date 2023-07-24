@@ -3,9 +3,9 @@ import HeaderLink from "./HeaderLink.astro";
 
 ---
 
-<header >
+<header class="sticky top-0 z-50 shadow-md" >
 	
-	<nav class="sticky">
+	<nav>
 		<span class="logo text-2xl"><HeaderLink href="/">I. O. Forge</HeaderLink></span>
 		
 		<div id="navItems" class="navItems">
@@ -26,14 +26,16 @@ import HeaderLink from "./HeaderLink.astro";
 
 <script src="../../scripts/menu.js"></script>
 <style>
+	header{
+		border-bottom:1px solid white;
+	}
 	nav{
 		display:flex;
 		flex-direction: row;
 		justify-content:space-between;
-	
 		align-items:center;
 		
-
+		
 		padding-right:10px;
 		padding-top:10px;
 		padding-bottom:10px;
@@ -46,13 +48,15 @@ import HeaderLink from "./HeaderLink.astro";
 	.logo{
 		margin:15px;
 		display:block;
-	
 	}
+
 	.navItems{
 		display:flex;
 		align-content:flex-end;
-		gap:5%;
-		visibility:visible;
+		gap:10px;
+		flex-wrap:nowrap;
+		--tw-bg-opacity: 1;
+  		background-color: rgb(248 250 252 / var(--tw-bg-opacity));
 		
 	}
 	.navItems a{
@@ -66,6 +70,7 @@ import HeaderLink from "./HeaderLink.astro";
 	}
 	.navItems a:hover{
 		transform:scale(1.2);
+		color:orange;
 	}
 	.navItems a:active{
 		--tw-bg-opacity: 1;
@@ -74,7 +79,7 @@ import HeaderLink from "./HeaderLink.astro";
 	}
 
 	.menu{
-		
+		display:block;
 		margin-right:10px;
 	}
 
@@ -89,36 +94,12 @@ import HeaderLink from "./HeaderLink.astro";
 	
 
 
-	@media screen and (max-width:420px) {
+	@media (max-width:600px) {
 		.navItems{
-			display:none;
 			flex-direction: column;
-			justify-content: space-around;
-			align-content:stretch;
-			padding-right:15%;
-			padding-left:15%;
-			
 		}
 		
-		.menu{
-			display:block;
-		}
- 
+		
 	}
-@media screen and (max-width:565px and min-width:421px) {
-	.navItems{
-			display:none;
-			flex-direction: column;
-			justify-content: space-around;
-			align-content:stretch;
-			padding-right:25%;
-			padding-left:25%;
-			
-		}
-		
-		.menu{
-			display:block;
-		}
-	
-}
+
 </style>
