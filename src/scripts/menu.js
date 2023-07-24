@@ -1,8 +1,11 @@
-function menu() {
-  const x = document.getElementById("navItems");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+const menuButton=document.getElementById("menuButton");
+const menuItems=document.getElementById("navItems");
+
+menuButton.addEventListener("click", function(){
+  if (menuItems.style.display === "none") {
+    menuItems.style.display = "block";
   } else {
-    x.style.display = "block";
-  }
+    menuItems.style.display = "none";
 }
+});
+
