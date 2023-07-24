@@ -3,21 +3,75 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header >
-	<nav class=" bg-slate-200">
-		<HeaderLink  href="/">Home</HeaderLink>
-		<HeaderLink  href="#about">About</HeaderLink>
-		<HeaderLink  href="#feature">Features</HeaderLink>
-		<HeaderLink  href="#product">Products</HeaderLink>
-    <HeaderLink  href="#pricing">Pricing</HeaderLink>
-		<HeaderLink  href="#contact">Contact</HeaderLink>
+	<nav class="navBar bg-cyan-100">
+		<span class="logo text-lg">I.O. Forge</span>
+		<div class="menu">
+			<button>Menu</button>
+		</div>
+		<div class="navItems">
+		<HeaderLink class="shadow-lg" href="/">Home</HeaderLink>
+		<HeaderLink class="shadow-lg" href="#about">About</HeaderLink>
+		<HeaderLink class="shadow-lg" href="#feature">Features</HeaderLink>
+		<!-- <HeaderLink class="shadow-lg" href="#product">Products</HeaderLink> -->
+    <HeaderLink class="shadow-lg" href="#pricing">Pricing</HeaderLink>
+		<HeaderLink class="shadow-lg" href="#contact">Contact</HeaderLink>
+		
+		</div>
 	</nav>
 </header >
 <style>
 	nav{
 		display:flex;
-		justify-content:flex-end;
-		gap:10px;
-		align-content:flex-end;
+		justify-content:space-between;
+	
+		align-items:center;
+		
+
 		padding-right:10px;
+		padding-top:10px;
+		padding-bottom:10px;
+	
+		transition:all 0.2s ease-in-out;	
+		
+	}
+	.logo{
+		margin:15px;
+
+	}
+	.navItems{
+		display:flex;
+		align-content:flex-end;
+		gap:10px;
+		visibility:visible;
+	}
+	a{
+		--tw-bg-opacity: 1;
+  		background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+		border-radius:20px;
+		padding:5px;
+		font-family: 'Lato', sans-serif;
+		position:relative;
+		flex:1 0 auto;
+	}
+	a:hover{
+		transform:scale(1.2);
+	}
+	a:active{
+		--tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+	color:aliceblue;
+	}
+
+	.menu{
+		display: none;
+	}
+	@media screen and (max-width:480px) {
+		.navItems{
+			display:none;
+		}
+		.menu{
+			display:contents;
+		}
+ 
 	}
 </style>
