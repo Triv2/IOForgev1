@@ -4,7 +4,7 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header >
-	<script defer src="../../"></script>
+	
 	<nav class=" bg-cyan-100">
 		<span class="logo text-2xl"><HeaderLink href="/">I. O. Forge</HeaderLink></span>
 		<div class="menu">
@@ -13,7 +13,7 @@ import HeaderLink from "./HeaderLink.astro";
     <i class="fa fa-bars"></i>
   </a>
 		</div>
-		<div class="navItems">
+		<div id="navItems" class="navItems">
 			<HeaderLink class="shadow-lg" href="#about">About</HeaderLink>
 			<HeaderLink class="shadow-lg" href="#feature">Features</HeaderLink>
 			<HeaderLink class="shadow-lg" href="#product">Products</HeaderLink>
@@ -22,9 +22,12 @@ import HeaderLink from "./HeaderLink.astro";
 		</div>
 	</nav>
 </header >
+
+
 <style>
 	nav{
 		display:flex;
+		flex-direction: row;
 		justify-content:space-between;
 	
 		align-items:center;
@@ -77,19 +80,21 @@ import HeaderLink from "./HeaderLink.astro";
 		transform:scale(1.5);
 	}
 
-	.menu:active{
-		
-		color:white;
-	}
+	
 
 
 	@media screen and (max-width:540px) {
 		.navItems{
 			display:none;
+			flex-direction: column;
 		}
 		.menu{
 			display:block;
 			
+		}
+		.menu:active{
+			color:white;
+	
 		}
  
 	}
