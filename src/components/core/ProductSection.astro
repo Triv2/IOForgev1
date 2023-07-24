@@ -1,7 +1,7 @@
 ---
 
 ---
-<article id="product" class="products center box bg-green-50">
+<article id="product" class="products center bg-green-50">
   <section class="center title">
     <h2>Products of IO Forge</h2>
     
@@ -9,47 +9,94 @@
   <article class="product_container">
 
     <section class="product">
-      <figure>
-    </figure>
-    <figcaption>
-      <h2>Product One</h2>
-      <p>SubText</p>
-    </figcaption>
+      <span class="text">
+        <picture class="product_one" ></picture>
+      </span>
+      <div class="text">
+        <h2>Product One</h2>
+        <p>SubText</p>
+        <p>What's Included</p>
+        <hr style="border:1px solid">
+        <ul class="list">
+          <li>List Item One</li>
+          <li>List Item Two</li>
+          <li>List Item Three</li>
+          <li>List Item Four</li>
+        </ul>
+     </div>
+     <span class="text">
+      <h2>Contact for more Information</h2>
+     </span>
   </section>
 
-    <section class="product">
-      <figure>
-    </figure>
-    <figcaption>
+  <section class="product">
+    <span class="text">
+      <picture class="product_one" ></picture>
+    </span>
+    <div class="text">
       <h2>Product Two</h2>
       <p>SubText</p>
-    </figcaption>
-  </section>
+      <p>What's Included</p>
+      <hr style="border:1px solid">
+      <ul class="list">
+        <li>List Item One</li>
+        <li>List Item Two</li>
+        <li>List Item Three</li>
+        <li>List Item Four</li>
+      </ul>
+   </div>
+   <span class="text">
+    <h2>Contact for more Information</h2>
+   </span>
+</section>
 
-    <section class="product">
-      <figure>
-    </figure>
-    <figcaption>
-      <h2>Product Three</h2>
-      <p>SubText</p>
-    </figcaption>
-  </section>
+<section class="product">
+  <span class="text">
+    <picture class="product_one" ></picture>
+  </span>
+  <div class="text">
+    <h2>Product Three</h2>
+    <p>SubText</p>
+    <p>What's Included</p>
+    <hr style="border:1px solid">
+    <ul class="list">
+      <li>List Item One</li>
+      <li>List Item Two</li>
+      <li>List Item Three</li>
+      <li>List Item Four</li>
+    </ul>
+ </div>
+ <span class="text">
+  <h2>Contact for more Information</h2>
+ </span>
+</section>
   
 </article>
 </article>
 <style>
 .product_container{
-  height:75%;
+  height:100%;
   width:75%;
   padding:5%;
   display:grid;
   /* grid-template-columns: 30% 30% 30%; */
-  grid-template-rows: 30% 30% 30%; 
+  grid-template-rows: auto auto auto; 
+  grid-column-start:auto;
   column-gap: 5%;
   row-gap: 5%;
+  margin-bottom:5%;
+  
+  
 }
-
-
+.list{
+  display:grid;
+  grid-template-columns: 45% 45%;
+  
+}
+.products{
+  height:200vh;
+  width:auto;
+}
 
 .product {
   background: #444;
@@ -57,7 +104,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:5px;
   color: #AAA;
+  max-height:fit-content;
+  
+
+}
+
+.text{
+  border:1px white solid;
+  padding:5px;
+}
+.product_one{
+  background-image:url("../../../public/ioproduct1.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display:flex;
+  min-height:150px;
+  min-width:150px;
+  max-height:fit-content;
+  max-width:fit-content;
 }
   
 </style>

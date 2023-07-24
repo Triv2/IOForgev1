@@ -3,9 +3,10 @@
 ---
 <article id="pricing" class="pricing box center bg-red-50 box">
   <section class="title center">
-    <h2>IO Forge Prices</h2>
+    <h2 class="text-3xl">IO Forge Prices</h2>
     
   </section>
+ 
   <article class="pricing_container">
 
     <section class="price">
@@ -13,46 +14,65 @@
       <p class="text-2xl"><strong>$1000.00</strong></p>
       <p>This is the description of the pricing features avaiable in service one.</p>
       <p>Second set of subtext defining another set of perks.</p>
-      <figure>
-    </figure>
-    <figcaption>
-    </figcaption>
+      <div>
+      <p>What's Included</p>
+      <hr style="border:1px solid white">
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+    </div>
   </section>
 
-    <section class="price">
-      <h3>Service</h3>
-      <p>Price</p>
-      <p>This is the description of the pricing features avaiable in service one.</p>
-      <figure>
-    </figure>
-    <figcaption>
-    </figcaption>
-  </section>
+  <section class="price">
+    <h3 class="text-xl">Service Two</h3>
+    <p class="text-2xl"><strong>$1000.00</strong></p>
+    <p>This is the description of the pricing features avaiable in service one.</p>
+    <p>Second set of subtext defining another set of perks.</p>
+    <div>
+    <p>What's Included</p>
+    <hr style="border:1px solid white">
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+      <li>Item Three</li>
+    </ul>
+  </div>
+</section>
 
-    <section class="price">
-      <h3>Service</h3>
-      <p>Price</p>
-      <p>This is the description of the pricing features avaiable in service one.</p>
-      <figure>
-    </figure>
-    <figcaption>
-    </figcaption>
-  </section>
+<section class="price">
+  <h3 class="text-xl">Service Three</h3>
+  <p class="text-2xl"><strong>$1000.00</strong></p>
+  <p>This is the description of the pricing features avaiable in service one.</p>
+  <p>Second set of subtext defining another set of perks.</p>
+  <div>
+  <p>What's Included</p>
+  <hr style="border:1px solid white">
+  <ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+  </ul>
+</div>
+</section>
   
 </article>
 </article>
 <style>
   .pricing_container{
-  height:75%;
-  width:75%;
+ height:75%;
+ width:75%;
   padding:5%;
-  display:grid;
-  grid-template-columns: 30% 30% 30%;
-  /* grid-template-rows: 30% 30% 30%;  */
-  column-gap: 5%;
-  row-gap: 5%;
-}
 
+  display:flex;
+
+  margin-bottom:5%;
+}
+.pricing{
+  height:200vh;
+  width:auto;
+}
 
 
 .price {
@@ -63,12 +83,20 @@
   align-items: center;
   justify-content: center;
   color: #AAA;
-  
+  height:50%;
+  margin-bottom:5%;
 }
 h3,p{
   flex:auto;
   padding-bottom:5%;
+  
 }
-
+@media (max-width:600px) {
+		.pricing_container{
+			flex-direction: column;
+		}
+		
+		
+	}
   
 </style>
