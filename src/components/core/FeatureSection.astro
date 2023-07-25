@@ -1,15 +1,15 @@
 ---
 
 ---
-<article id="feature" class="features box center">
-  <section class="center title">
+<article id="feature" class=" center">
+  <section class="center">
     <h2>Features of IO Forge</h2>
     
   </section>
-  <article class="feature_container">
+  <article class="feature_container features text">
 
     <section class="feature">
-      <figure>
+      <figure class="feature_one">
     </figure>
     <figcaption>
       <h2>Feature One</h2>
@@ -18,7 +18,7 @@
   </section>
 
     <section class="feature">
-      <figure>
+      <figure class="feature_one">
     </figure>
     <figcaption>
       <h2>Feature Two</h2>
@@ -27,8 +27,8 @@
   </section>
 
     <section class="feature">
-      <figure>
-    </figure>
+      <figure class="feature_one">
+      </figure>
     <figcaption>
       <h2>Feature Three</h2>
       <p>SubText</p>
@@ -36,7 +36,7 @@
   </section>
 
   <section class="feature">
-    <figure>
+    <figure class="feature_one">
   </figure>
   <figcaption>
     <h2>Feature One</h2>
@@ -45,8 +45,8 @@
 </section>
 
   <section class="feature">
-    <figure>
-  </figure>
+   <figure class="feature_one">
+   </figure>
   <figcaption>
     <h2>Feature Two</h2>
     <p>SubText</p>
@@ -54,7 +54,7 @@
 </section>
 
   <section class="feature">
-    <figure>
+    <figure class="feature_one">
   </figure>
   <figcaption>
     <h2>Feature Three</h2>
@@ -63,7 +63,7 @@
 </section>
 
 <section class="feature">
-  <figure>
+  <figure class="feature_one">
 </figure>
 <figcaption>
   <h2>Feature One</h2>
@@ -72,7 +72,7 @@
 </section>
 
 <section class="feature">
-  <figure>
+  <figure class="feature_one">
 </figure>
 <figcaption>
   <h2>Feature Two</h2>
@@ -81,7 +81,7 @@
 </section>
 
 <section class="feature">
-  <figure>
+  <figure class="feature_one">
 </figure>
 <figcaption>
   <h2>Feature Three</h2>
@@ -115,8 +115,42 @@
   background: #444;
   border: 1px solid #555;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #AAA;
+  
 }
+.feature_one{
+  background-image:url("/ioproduct1.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  min-height:120px;
+  min-width:120px;
+  max-height:fit-content;
+  max-width:fit-content;
+}
+@media (max-width:660px) {
+		.feature_container{
+      padding:0%;
+      width:100%;
+      display:flex;
+      flex-direction: column;
+      gap:1%;
+      
+    }
+    .feature_one{
+      min-width:75px;
+      min-height: 75px;
+    }
+    
+    .text{
+      font-size: 14px;
+    }
+    
+		
+	}
+
 </style>
