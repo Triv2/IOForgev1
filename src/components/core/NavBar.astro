@@ -17,7 +17,7 @@ import HeaderLink from "./HeaderLink.astro";
 		</div>
 		<div class="menu p-5">
 			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  	<a id="menuButton"  class="icon" >
+  	<a id="menuButton"  class="icon shadow-lg" >
     <i class="fa fa-bars"></i>
   </a>
 	</div>
@@ -49,11 +49,16 @@ import HeaderLink from "./HeaderLink.astro";
 		margin:15px;
 		display:block;
 	}
+	.logo:hover{
+		--tw-bg-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-bg-opacity)) ;
+	}
 
 	.navItems{
 		display:flex;
-		align-content:flex-end;
+		align-content:center;
 		gap:10px;
+		
 		flex-wrap:nowrap;
 		--tw-bg-opacity: 1;
   		background-color: rgb(248 250 252 / var(--tw-bg-opacity));
@@ -62,15 +67,16 @@ import HeaderLink from "./HeaderLink.astro";
 	.navItems a{
 		--tw-bg-opacity: 1;
   		background-color: rgb(248 250 252 / var(--tw-bg-opacity));
-		/* border-radius:20px; */
-		padding:5px;
-		font-family: 'Lato', sans-serif;
 		
+		padding:10px;
+		font-family: 'Lato', sans-serif;
+		border-radius: 10px;
 		flex:1 0 1;
 	}
 	.navItems a:hover{
 		transform:scale(1.2);
-		color:orange;
+		--tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 	}
 	.navItems a:active{
 		--tw-bg-opacity: 1;
@@ -80,16 +86,23 @@ import HeaderLink from "./HeaderLink.astro";
 
 	.menu{
 		display:block;
-		margin-right:10px;
+		
+	}
+	.icon{
+		padding:10px;
+		border-radius:10px;
 	}
 
-	.menu:hover{
-	
+	.icon:hover{
+		--tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 		transform:scale(1.5);
 	}
 
-	.menu:active{
-			color:white;
+	.icon:active{
+		--tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+	color:aliceblue;
 	}
 	
 
