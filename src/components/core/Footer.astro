@@ -1,0 +1,32 @@
+---
+import HeaderLink from "../core/HeaderLink.astro";
+const today=new Date();
+---
+<footer class="title center bg-slate-200">
+  <section class="flex flex-row gap-10 basis-10">
+    <article class="flex-auto icon ">
+      <HeaderLink  target="_blank"><img src="/githublogo.svg" alt="github"></HeaderLink>
+    </article>
+    <article class="flex-auto icon" >
+      <HeaderLink target="_blank"><img src="/twitlogo.svg" alt="twitter"></HeaderLink>
+    </article>
+    <article class="flex-auto icon ">
+      <HeaderLink  target="_blank"> <img src="/ytlogo.svg" alt="youtube"></HeaderLink>
+    </article>
+    <article class="flex-auto icon">
+      <HeaderLink target="_blank"> <img src="/discordlogo.svg" alt="discord"></HeaderLink>
+    </article>
+    
+    </section>
+    <p class="mt-5">&copy; {today.getFullYear()} I.O. Forge. All rights reserved.</p>
+
+</footer>
+<style>
+.title{
+  padding-bottom:10%;
+}
+.icon:hover{
+  transform:scale(1.5);
+}
+
+</style>
