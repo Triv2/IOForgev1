@@ -4,7 +4,7 @@
 }
 article{
 
-  border:2px dashed;
+  /* border:2px dashed; */
 }
 .box{
   height:100vh;
@@ -23,7 +23,7 @@ h1,h2,p,body{
 }
 
 section{
-  border:2px solid;
+  /* border:2px solid; */
   width:auto !important;
   height:auto!important;
     padding:10px;
