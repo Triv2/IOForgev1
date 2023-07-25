@@ -1,11 +1,11 @@
 ---
 
 ---
-<article id="product" class="products center bg-green-50">
-  <section class="center title">
+<article id="product" class="products center bg-slate-100">
+  <section class="center title shadow-lg">
     <h2>Products of IO Forge</h2>
   </section>
-  <article class="product_container">
+  <article class="product_container shadow-lg">
 
     <section class="product">
       <span class="text">
@@ -84,7 +84,8 @@
   column-gap: 5%;
   row-gap: 5%;
   margin-bottom:5%;
-  
+  border-radius:10px;
+  border-top:1px solid;
   
 }
 .list{
@@ -107,8 +108,14 @@
   gap:5px;
   color: #AAA;
   max-height:fit-content;
-  
-
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius:10px;
+}
+.title{
+  border-bottom:1px solid;
+  border-radius:10px;
 }
 
 .text{

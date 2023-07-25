@@ -1,11 +1,11 @@
 ---
 
 ---
-<article id="pricing" class="pricing center bg-red-50">
-  <section class="title center">
+<article id="pricing" class="pricing center bg-slate-200">
+  <section class="title center shadow-lg">
     <h2>IO Forge Prices</h2>
     </section>
-  <article class="pricing_container">
+  <article class="pricing_container shadow-lg">
 
     <section class="price">
       <h3 class="text-xl">Service One</h3>
@@ -62,10 +62,12 @@
  height:75%;
  width:75%;
   padding:5%;
-
+  
+  border-top:1px solid;  
   display:flex;
 
   margin-bottom:5%;
+  border-radius:10px;
 }
 .pricing{
   height:150vh;
@@ -82,12 +84,19 @@
   justify-content: center;
   color: #AAA;
   height:40%;
+  padding:5%;
   margin-bottom:5%;
+  border-radius:10px;
 }
 h3,p{
   flex:auto;
   padding-bottom:5%;
   
+}
+.title{
+  border-radius:10px;
+  border-bottom:1px solid;
+
 }
 @media (max-width:670px) {
 		.pricing_container{
