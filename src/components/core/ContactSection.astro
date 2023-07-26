@@ -2,10 +2,10 @@
 
 ---
 <article id="contact" class="contact box center bg-slate-100">
-  <section class="title center shadow-lg">
+  <section class="title center shadow-lg bg-slate-200">
   <h2>Contact IO Forge</h2>
   </section>
-  <section class="form shadow-lg">
+  <section class="form shadow-lg bg-slate-200 mb-10">
   <form>
     <div class="mb-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
@@ -19,18 +19,22 @@
       <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
       <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Enter your message"></textarea>
     </div>
-    <button class="bg-slate-500 text-white hover:bg-slate-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Submit</button>
+    <button class="bg-slate-500 bg-shadow-xl text-white hover:bg-slate-700 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline btn" type="submit">Submit</button>
   </form>
 </section> 
 </article>
 <style>
  .form{
-  border-top:1px solid;
+  
   padding:5%;
   border-radius:10px;
  }
  .title{
   border-radius:10px;
-  border-bottom:1px solid;
+  
+ }
+ 
+ .btn:active{
+  color:cadetblue;
  }
 </style>

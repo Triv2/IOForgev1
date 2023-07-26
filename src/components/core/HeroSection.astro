@@ -1,10 +1,13 @@
 ---
-
+import HeaderLink from "./HeaderLink.astro";
 ---
-<article id="/" class="hero responsive ">
-  <section class="center bg-slate-400 bg-opacity-25 text">
+<article id="/" class="hero responsive bg-slate-800 ">
+  <section class="center text">
     <h1 class="top m-10">I.O. Forge</h1>
     <p>Software Solutions for Enterprise Resource Planning</p>
+    <section class="flex">
+      <HeaderLink href="#contact" class="text-2xl p-10 bg-slate-400 icon shadow-2xl m-10">Contact</HeaderLink>
+    </section>
   </section>
 </article>
 <style>
@@ -13,6 +16,7 @@
   }
   .text{
     border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.589);
   }
   .hero{
     background-image:url("/iohero.svg");
@@ -21,13 +25,25 @@
     background-position: center;
     
   }
+  .icon{
+    border-radius:10px;
+  }
+  .icon:hover{
+    --tw-bg-opacity: 1;
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  }
+  .icon:active{
+    --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  color:cadetblue
+  }
   .top{
     font-size: 80px;
   }
   p{
     font-size:35px;
-    color:coral;
-    background-color: grey;
+    color:rgb(235, 233, 233);
+    
     padding:2%;
     border-radius:10px;
   }

@@ -2,10 +2,7 @@
   display:grid;
   place-items:center;
 }
-article{
 
-  /* border:2px dashed; */
-}
 .box{
   height:100vh;
   width:100%;
