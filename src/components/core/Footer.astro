@@ -3,6 +3,7 @@ import HeaderLink from "../core/HeaderLink.astro";
 const today=new Date();
 ---
 <footer class="title center bg-slate-200">
+  <span class="logo text-2xl mb-5 pb-5"><HeaderLink href="/">I. O. Forge</HeaderLink></span>
   <section class="flex flex-row gap-10 basis-10">
     <article class="flex-auto icon ">
       <HeaderLink  target="_blank"><img src="/githublogo.svg" alt="github"></HeaderLink>
@@ -28,6 +29,14 @@ const today=new Date();
 .icon:hover{
   transform:scale(1.5);
 }
+.logo{
+		margin:15px;
+		display:block;
+	}
+	.logo:hover{
+    transform:scale(1.1);
+	color:cadetblue;
+	}
 
 
 </style>
