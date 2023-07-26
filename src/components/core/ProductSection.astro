@@ -1,5 +1,5 @@
 ---
-
+import HeaderLink from "./HeaderLink.astro";
 ---
 <article id="product" class="products center bg-slate-100">
   <section class="center title shadow-lg bg-slate-200">
@@ -7,13 +7,15 @@
   </section>
   <article class="product_container shadow-lg bg-slate-200">
 
-    <section class="product bg-slate-400 text-white">
+    <section class="product bg-slate-400  text-white drop-shadow-lg">
       <span>
         <picture class="product_one" ></picture>
       </span>
       <div class="text">
-        <h2 class="pTitle">Product One</h2>
-        <p><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
+        <section class=" pTitle bg-slate-500">
+        <h2 >Product One</h2>
+        </section>
+        <p class="pText"><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
           Followed by a list to help display the features available in this product.</em></p>
         <p class="pLabel">What's Included</p>
         <hr style="border:1px solid">
@@ -23,43 +25,45 @@
           <li>List Item Three: You guessed it, another feature show-off.</li>
           <li>List Item Four: Final Feature display.</li>
         </ul>
-        <hr style="border:1px solid">
-           <span class="bText">
-          <h2>Contact for more Information</h2>
-         </span>
+        <section class="bText bg-slate-700 drop-shadow-lg">
+          <HeaderLink  href="#contact"><h2>Contact for more Information</h2></HeaderLink>
+        </section>
      </div>
     </section>
 
-  <section class="product bg-slate-400 text-white">
-    <span>
-      <picture class="product_one" ></picture>
-    </span>
-    <div class="text">
-      <h2 class="pTitle">Product Two</h2>
-      <p><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
-        Followed by a list to help display the features available in this product.</em></p>
-      <p class="pLabel">What's Included</p>
-      <hr style="border:1px solid">
-      <ul class="list">
-        <li>List Item One: A way to show a feature offered in a product.</li>
-        <li>List Item Two: Another way to show a feature offered.</li>
-        <li>List Item Three: You guessed it, another feature show-off.</li>
-        <li>List Item Four: Final Feature display.</li>
-      </ul>
-      <hr style="border:1px solid">
-         <span class="bText">
-        <h2>Contact for more Information</h2>
-       </span>
-   </div>
-  </section>
+    <section class="product bg-slate-400  text-white drop-shadow-lg">
+      <span>
+        <picture class="product_one" ></picture>
+      </span>
+      <div class="text">
+        <section class=" pTitle bg-slate-500">
+        <h2 >Product Two</h2>
+        </section>
+        <p class="pText"><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
+          Followed by a list to help display the features available in this product.</em></p>
+        <p class="pLabel">What's Included</p>
+        <hr style="border:1px solid">
+        <ul class="list">
+          <li>List Item One: A way to show a feature offered in a product.</li>
+          <li>List Item Two: Another way to show a feature offered.</li>
+          <li>List Item Three: You guessed it, another feature show-off.</li>
+          <li>List Item Four: Final Feature display.</li>
+        </ul>
+        <section class="bText bg-slate-700 drop-shadow-lg">
+          <HeaderLink  href="#contact"><h2>Contact for more Information</h2></HeaderLink>
+        </section>
+     </div>
+    </section>
 
-<section class="product bg-slate-400 text-white drop-shadow-lg">
+<section class="product bg-slate-400  text-white drop-shadow-lg">
   <span>
     <picture class="product_one" ></picture>
   </span>
   <div class="text">
-    <h2 class="pTitle">Product Three</h2>
-    <p><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
+    <section class=" pTitle bg-slate-500">
+    <h2 >Product Three</h2>
+    </section>
+    <p class="pText"><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
       Followed by a list to help display the features available in this product.</em></p>
     <p class="pLabel">What's Included</p>
     <hr style="border:1px solid">
@@ -69,10 +73,9 @@
       <li>List Item Three: You guessed it, another feature show-off.</li>
       <li>List Item Four: Final Feature display.</li>
     </ul>
-    <hr style="border:1px solid">
-       <span class="bText">
-      <h2>Contact for more Information</h2>
-     </span>
+    <section class="bText bg-slate-700 drop-shadow-lg">
+      <HeaderLink  href="#contact"><h2>Contact for more Information</h2></HeaderLink>
+    </section>
  </div>
 </section>
   
@@ -94,6 +97,7 @@
 .list{
  display:flex;
  flex-direction: column;
+ color:whitesmoke;
   
 }
 .list li{
@@ -104,7 +108,9 @@
 .products{
   height:auto;
   width:auto;
-  padding:10%;
+  padding:5%;
+  padding-top:25%;
+  padding-bottom:25%;
 }
 
 .product {
@@ -128,7 +134,9 @@
   border-radius:10px;
   margin-bottom:10%;
 }
-
+.pText{
+  color:whitesmoke;
+}
 .text{
   border:1px white solid;
   padding:5px;
@@ -160,9 +168,13 @@
 .pTitle{
   font-weight:bold;
   font-size:25px;
+ border-radius:10px;
+  text-align: center;
 }
 .pLabel{
   font-weight:bold;
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 h2{
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
@@ -176,6 +188,20 @@ h2,p{
 }
 .bText{
   text-align:center;
+  border-radius:10px;
+  font-weight:bold;
+  font-size:20px;
+  
+}
+.bText:hover{
+  
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  transform:scale(1.1);
+}
+.bText:active{
+  color:cadetblue;
+  transform:scale(0.9);
 }
 
 @media (max-width:670px) {

@@ -3,7 +3,7 @@ import HeaderLink from "../core/HeaderLink.astro";
 const today=new Date();
 ---
 <footer class="title center bg-slate-200">
-  <span class="logo text-2xl mb-5 "><HeaderLink href="/">I. O. Forge</HeaderLink></span>
+  <span class="logo text-2xl mb-5 drop-shadow-lg"><HeaderLink href="/">I. O. Forge</HeaderLink></span>
   <section class="flex flex-row gap-5 basis-10">
     <article class="flex-auto icon center">
       <HeaderLink  target="_blank"><img src="/githublogo.svg" alt="github"></HeaderLink>
@@ -14,12 +14,12 @@ const today=new Date();
     <article class="flex-auto icon center">
       <HeaderLink  target="_blank"> <img src="/ytlogo.svg" alt="youtube"></HeaderLink>
     </article>
-    <article class="flex-auto icon center">
+    <article class="flex-auto icon center ">
       <HeaderLink target="_blank"> <img src="/discordlogo.svg" alt="discord"></HeaderLink>
     </article>
     
     </section>
-    <p class="p-5">&copy; {today.getFullYear()} I.O. Forge. All rights reserved.</p>
+    <p class="p-5 drop-shadow-lg">&copy; {today.getFullYear()} I.O. Forge. All rights reserved.</p>
 
 </footer>
 <style>
@@ -29,6 +29,9 @@ const today=new Date();
 .icon{
   min-height:30px;
   min-width:30px;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+	
 }
 .icon:hover{
   transform:scale(1.5);
