@@ -8,95 +8,70 @@
   <article class="feature_container bg-slate-300  text">
     
     <section class="feature">
-      <figure class="feature_one">
-    </figure>
-    <figcaption>
-      <h2>Feature One</h2>
-      <p>SubText</p>
-    </figcaption>
-  </section>
-
-    <section class="feature">
-      <figure class="feature_one">
-    </figure>
-    <figcaption>
-      <h2>Feature Two</h2>
-      <p>SubText</p>
-    </figcaption>
-  </section>
-
-    <section class="feature">
-      <figure class="feature_one">
-      </figure>
-    <figcaption>
-      <h2>Feature Three</h2>
-      <p>SubText</p>
-    </figcaption>
+      <figure class="feature_one"></figure>
+    <section class="text">
+      <h2 class="fTitle">Feature One</h2>
+      <p class="fText"><em>This is the subtext of feature one. It should be one to two sentences in length, describing one feature.</em></p>
+      <p class="fText"><em>This is the second subtext sentence of feature one. </em></p>
+    </section>
   </section>
 
   <section class="feature">
-    <figure class="feature_one">
-  </figure>
-  <figcaption>
-    <h2>Feature One</h2>
-    <p>SubText</p>
-  </figcaption>
+    <figure class="feature_one"></figure>
+  <section class="text">
+    <h2 class="fTitle">Feature Two</h2>
+    <p class="fText"><em>This is the subtext of feature one. It should be one to two sentences in length, describing one feature.</em></p>
+    <p class="fText"><em>This is the second subtext sentence of feature one. </em></p>
+  </section>
 </section>
+
+   <section class="feature">
+      <figure class="feature_one"></figure>
+    <section class="text">
+      <h2 class="fTitle">Feature Three</h2>
+      <p class="fText"><em>This is the subtext of feature one. It should be one to two sentences in length, describing one feature.</em></p>
+      <p class="fText"><em>This is the second subtext sentence of feature one. </em></p>
+    </section>
+  </section>
 
   <section class="feature">
-   <figure class="feature_one">
-   </figure>
-  <figcaption>
-    <h2>Feature Two</h2>
-    <p>SubText</p>
-  </figcaption>
-</section>
-
-  <section class="feature">
-    <figure class="feature_one">
-  </figure>
-  <figcaption>
-    <h2>Feature Three</h2>
-    <p>SubText</p>
-  </figcaption>
+    <figure class="feature_one"></figure>
+  <section class="text">
+    <h2 class="fTitle">Feature Four</h2>
+    <p class="fText"><em>This is the subtext of feature one. It should be one to two sentences in length, describing one feature.</em></p>
+    <p class="fText"><em>This is the second subtext sentence of feature one. </em></p>
+  </section>
 </section>
 
 <section class="feature">
-  <figure class="feature_one">
-</figure>
-<figcaption>
-  <h2>Feature One</h2>
-  <p>SubText</p>
-</figcaption>
+  <figure class="feature_one"></figure>
+<section class="text">
+  <h2 class="fTitle">Feature Five</h2>
+  <p class="fText"><em>This is the subtext of feature one. It should be one to two sentences in length, describing one feature.</em></p>
+  <p class="fText"><em>This is the second subtext sentence of feature one. </em></p>
+</section>
 </section>
 
 <section class="feature">
-  <figure class="feature_one">
-</figure>
-<figcaption>
-  <h2>Feature Two</h2>
-  <p>SubText</p>
-</figcaption>
+  <figure class="feature_one"></figure>
+<section class="text">
+  <h2 class="fTitle">Feature Six</h2>
+  <p class="fText"><em>This is the subtext of feature one. It should be one to two sentences in length, describing one feature.</em></p>
+  <p class="fText"><em>This is the second subtext sentence of feature one. </em></p>
+</section>
 </section>
 
-<section class="feature">
-  <figure class="feature_one">
-</figure>
-<figcaption>
-  <h2>Feature Three</h2>
-  <p>SubText</p>
-</figcaption>
-</section>
+
 
 </article>
 </article>
 <style>
 .feature_container{
   height:100%;
-  width:75%;
+  width:100%;
   padding:5%;
   display:grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 47% 48%;
   grid-template-rows: 30% 30% 30%; 
   column-gap: 5%;
   row-gap: 5%;
@@ -122,6 +97,7 @@
   padding:10%;
   height:auto;
   width:100%;
+  
 }
 
 
@@ -132,41 +108,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: whitesmoke;
-  font-weight:bold;
+  justify-content: space-evenly;
+  
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   border-radius:10px;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:25%;
+  padding-bottom:25%;
 }
 .feature_one{
   background-image:url("/ioproduct1.svg");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
-  
-  min-height:110px;
-  min-width:110px;
+  border-radius:10px;
+  min-height:200px;
+  min-width:200px;
   max-height:fit-content;
   max-width:fit-content;
+  margin:25%;
 }
-
+.fTitle{
+  color: whitesmoke;
+  font-weight:bold;
+  font-size:20px;
+}
+.fText{
+  color: whitesmoke;
+  font-size:14px;
+}
 @media (max-width:670px) {
 		.feature_container{
       padding:0%;
       width:100%;
       display:flex;
       flex-direction: column;
-      gap:1%;
+      gap:20px;
+      height:auto;
       
     }
     .features{
-      height:250vh;
+      height:auto;
+      
     }
-    .feature_one{
-      min-width:75px;
-      min-height: 75px;
+    
+    .feature{
+      padding:7%;
+      
     }
     
     .text{
