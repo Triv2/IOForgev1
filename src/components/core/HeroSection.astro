@@ -1,12 +1,16 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 ---
-<article id="/" class="hero responsive bg-slate-800 ">
+<article id="/" class="hero responsive background ">
   <section class="center hero_container">
     <h1 class="hTitle m-10 ">I.O. Forge</h1>
     <p class="hText">Software Solutions for Enterprise Resource Planning</p>
     <HeaderLink href="#contact" class="text-2xl p-5 bg-slate-400 icon shadow-2xl m-10">Contact</HeaderLink>
   </section>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </article>
 <style>
   section{
@@ -14,7 +18,7 @@ import HeaderLink from "./HeaderLink.astro";
   }
   .hero_container{
     border-radius:10px;
-    background-color: rgba(0, 0, 0, 0.589);
+    
     height:100%;
     width:100%;
     display:flex;
@@ -55,6 +59,92 @@ import HeaderLink from "./HeaderLink.astro";
     padding:2%;
     border-radius:10px;
   }
+
+  @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #334155;
+    overflow: hidden;
+}
+.background div {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background div:nth-child(0) {
+    left: 38%;
+    width: 215px;
+    height: 215px;
+    bottom: -215px;
+    animation-delay: 1s;
+}
+.background div:nth-child(1) {
+    left: 43%;
+    width: 145px;
+    height: 145px;
+    bottom: -145px;
+    animation-delay: 1s;
+}
+.background div:nth-child(2) {
+    left: 26%;
+    width: 242px;
+    height: 242px;
+    bottom: -242px;
+    animation-delay: 8s;
+}
+.background div:nth-child(3) {
+    left: 70%;
+    width: 93px;
+    height: 93px;
+    bottom: -93px;
+    animation-delay: 15s;
+}
+.background div:nth-child(4) {
+    left: 60%;
+    width: 47px;
+    height: 47px;
+    bottom: -47px;
+    animation-delay: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media(max-width:1000px){
     
     .hTitle{
