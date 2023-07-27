@@ -6,7 +6,7 @@ import HeaderLink from "./HeaderLink.astro";
 <header class="sticky top-0 z-50 shadow-md" >
 	
 	<nav>
-		<span class="logo text-2xl"><HeaderLink href="/">I. O. Forge</HeaderLink></span>
+		<span class="logo text-2xl flex items-center"><img src="/logo.svg" width="125px" height="30px" alt="logo"></picture><HeaderLink href="/">I. O. Forge</HeaderLink></span>
 		
 		<div id="navItems" class="navItems">
 			<HeaderLink class="shadow-lg" href="#about">About</HeaderLink>
@@ -37,8 +37,8 @@ import HeaderLink from "./HeaderLink.astro";
 		
 		
 		padding-right:10px;
-		padding-top:10px;
-		padding-bottom:10px;
+		
+		
 	
 		transition:all 0.2s ease-in-out;	
 		--bg-opacity: 1;
@@ -60,7 +60,7 @@ import HeaderLink from "./HeaderLink.astro";
 		display:flex;
 		align-content:center;
 		gap:10px;
-		
+		align-self:;
 		flex-wrap:nowrap;
 		--tw-bg-opacity: 1;
   		background-color: rgb(248 250 252 / var(--tw-bg-opacity));
@@ -120,10 +120,15 @@ import HeaderLink from "./HeaderLink.astro";
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 	color:cadetblue;
 	}
-	
+	@media(max-width:800px){
+		img{
+			width:50px;
+			height:50px;
+		}
+	}
 
 
-	@media (max-width:670px) {
+	@media (max-width:700px) {
 		.navItems{
 			flex-direction: column;
 		}

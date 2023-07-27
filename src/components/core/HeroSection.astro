@@ -3,8 +3,11 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 <article id="/" class="hero responsive background ">
   <section class="center hero_container">
+    <section class="flex items-center">
+    <img src="logo.svg" alt="Logo" width="200px" height="200px"/>
     <h1 class="hTitle m-10 ">I.O. Forge</h1>
-    <p class="hText">Software Solutions for Enterprise Resource Planning</p>
+    </section>
+    <p class="hText">Software Solutions for Data Analytics and Enterprise Resource Planning</p>
     <HeaderLink href="#contact" class="text-2xl p-5 bg-slate-400 icon shadow-2xl m-10">Contact</HeaderLink>
     
   </section>
@@ -159,7 +162,10 @@ import HeaderLink from "./HeaderLink.astro";
 
 
   @media(max-width:1000px){
-    
+    img{
+      width:150px;
+      height:150px;
+    }
     .hTitle{
       font-size:60px;
     }
@@ -169,8 +175,11 @@ import HeaderLink from "./HeaderLink.astro";
   }
 
 
-  @media (max-width:670px) {
-		
+  @media (max-width:700px) {
+		img{
+      width:100px;
+      height:100px;
+    }
     .hTitle{
       font-size:40px;
     }
