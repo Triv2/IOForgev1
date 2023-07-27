@@ -3,21 +3,24 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 <article id="product" class="products center bg-slate-100">
   <section class="center title shadow-lg bg-slate-200">
-    <h2>Products of IO Forge</h2>
+    <h2>IO Forge</h2>
+    <h2>Products and Services</h2>
   </section>
   <article class="product_container shadow-lg bg-slate-200">
 
     <section class="product bg-slate-400  text-white drop-shadow-lg">
-      <span>
+      <span class="imagesContainer">
+        <picture class="product_one" ></picture>
         <picture class="product_one" ></picture>
       </span>
       <div class="text">
         <section class=" pTitle bg-slate-500">
         <h2 >Data Analytics</h2>
         </section>
-        <p class="pText"><em>This toolset is the main part of our software solutions system. It allows us to map out the data from your business and give you 
-          a detailed overview of everything your company takes in, and what it puts out, in an easy simple to understand way.</em></p>
-        <p class="pLabel">Service Details</p>
+        <p class="pText">This toolset is the main part of our software solutions system.</p>
+          <p class="pText">It allows us to map out the data from your business and give you 
+          a detailed overview of everything your company takes in, and what it puts out, in an easy simple to understand way.</p>
+        <p class="pLabel">Product and Service Details</p>
         <hr style="border:1px solid">
         <ul class="list">
           <li>Data Pre-processing. We clean up all your current data to be usable in multiple software tools.</li>
@@ -39,9 +42,9 @@ import HeaderLink from "./HeaderLink.astro";
         <section class=" pTitle bg-slate-500">
         <h2 >Enterprise Resource Planning</h2>
         </section>
-        <p class="pText"><em>The high-level version of our Data Analytics system, based on modern enterprise resource planning techniques, our software system will optimize your
-          business for increased efficency. The difference between our system and other commercial product is speed and our ability to customize the system to your specific business needs.</em></p>
-        <p class="pLabel">Service Details</p>
+        <p class="pText">The high-level version of our Data Analytics system, based on modern enterprise resource planning techniques, our software system will optimize your
+          business for increased efficency. The difference between our system and other commercial product is speed and our ability to customize the system to your specific business needs.</p>
+        <p class="pLabel">Product and Service Details</p>
         <hr style="border:1px solid">
         <ul class="list">
           <li>A quality management system built to support all core business processes.</li>
@@ -99,7 +102,7 @@ import HeaderLink from "./HeaderLink.astro";
   padding:5%;
   display:flex;
   flex-direction:column;
-  gap:75px;
+  gap:5%;
   margin-bottom:0%;
   border-radius:10px;
   
@@ -115,6 +118,7 @@ import HeaderLink from "./HeaderLink.astro";
   padding:5px;
   text-align:flex-start;
   padding-left:20px;
+  font-size:22px;
 }
 .products{
   height:auto;
@@ -132,6 +136,7 @@ import HeaderLink from "./HeaderLink.astro";
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+  
 }
 
 .product {
@@ -148,6 +153,12 @@ import HeaderLink from "./HeaderLink.astro";
   border-radius:10px;
   width:auto;
 }
+.imagesContainer{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:5%;
+}
 .title{
   font-size:40px;
     color:rgb(100, 100, 100);
@@ -157,6 +168,7 @@ import HeaderLink from "./HeaderLink.astro";
 }
 .pText{
   color:whitesmoke;
+  font-size:24px;
 }
 .text{
   border:1px white solid;
@@ -177,8 +189,8 @@ import HeaderLink from "./HeaderLink.astro";
   background-repeat: no-repeat;
   background-position: center;
   display:flex;
-  min-height:150px;
-  min-width:150px;
+  min-height:250px;
+  min-width:250px;
   max-height:fit-content;
   max-width:fit-content;
   border-radius:10px;
@@ -188,11 +200,12 @@ import HeaderLink from "./HeaderLink.astro";
 }
 .pTitle{
   font-weight:bold;
-  font-size:25px;
+  font-size:36px;
  border-radius:10px;
   text-align: center;
 }
 .pLabel{
+  font-size:26px;
   font-weight:bold;
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -238,10 +251,16 @@ h2,p{
     }
     
     .text{
-      font-size: 12px;
+      font-size: 18px;
     }
-    
-		
+    .imagesContainer{
+  
+  flex-direction:row;
+}
+		.product_one{
+      min-height:125px;
+      min-width:125px;
+    }
 	}
 
   

@@ -6,13 +6,13 @@ import HeaderLink from "./HeaderLink.astro";
 <header class="sticky top-0 z-50 shadow-md" >
 	
 	<nav>
-		<span class="logo text-2xl flex items-center"><img src="/logo.svg" width="125px" height="30px" alt="logo"></picture><HeaderLink href="/">I. O. Forge</HeaderLink></span>
+		<span class="logo text-2xl flex items-center"><img src="/logo.svg" width="50px" height="30px" alt="logo"></picture><HeaderLink href="/">I. O. Forge</HeaderLink></span>
 		
 		<div id="navItems" class="navItems">
 			<HeaderLink class="shadow-lg" href="#about">About</HeaderLink>
 			<HeaderLink class="shadow-lg" href="#features">Features</HeaderLink>
-			<HeaderLink class="shadow-lg" href="#product">Products</HeaderLink>
-			<HeaderLink class="shadow-lg" href="#pricing">Pricing</HeaderLink>
+			<HeaderLink class="shadow-lg" href="#product">Products and Services</HeaderLink>
+			<HeaderLink class="shadow-lg" href="#system">System Design</HeaderLink>
 			<HeaderLink class="shadow-lg" href="#contact">Contact</HeaderLink>
 		</div>
 		<div class="menu p-5">
@@ -134,6 +134,15 @@ import HeaderLink from "./HeaderLink.astro";
 		}
 		
 		
+	}
+	@media(max-width:420px){
+		.navItems{
+			font-size: 14px;
+		}
+		.logo{
+			flex-direction:column;
+			
+		}
 	}
 
 </style>
