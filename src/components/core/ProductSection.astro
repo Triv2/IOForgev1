@@ -15,15 +15,15 @@ import HeaderLink from "./HeaderLink.astro";
         <section class=" pTitle bg-slate-500">
         <h2 >Data Analytics</h2>
         </section>
-        <p class="pText"><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
-          Followed by a list to help display the features available in this product.</em></p>
-        <p class="pLabel">What's Included</p>
+        <p class="pText"><em>This toolset is the main part of our software solutions system. It allows us to map out the data from your business and give you 
+          a detailed overview of everything your company takes in, and what it puts out, in an easy simple to understand way.</em></p>
+        <p class="pLabel">Service Details</p>
         <hr style="border:1px solid">
         <ul class="list">
-          <li>List Item One: A way to show a feature offered in a product.</li>
-          <li>List Item Two: Another way to show a feature offered.</li>
-          <li>List Item Three: You guessed it, another feature show-off.</li>
-          <li>List Item Four: Final Feature display.</li>
+          <li>Data Pre-processing. We clean up all your current data to be usable in multiple software tools.</li>
+          <li>Database Integration. We integrate your data into our powerful analysis system.</li>
+          <li>Data Modeling. We then optimize our system to create the most efficient solutions for your company.</li>
+          <li>Data Representation. Once these steps are complete all your data will be readily available in whatever form your business needs.</li>
         </ul>
         <section class="bText bg-slate-700 drop-shadow-lg">
           <HeaderLink  href="#contact"><h2>Contact for more Information</h2></HeaderLink>
@@ -39,14 +39,25 @@ import HeaderLink from "./HeaderLink.astro";
         <section class=" pTitle bg-slate-500">
         <h2 >Enterprise Resource Planning</h2>
         </section>
-        <p class="pText"><em>This is the subtext of the product. Giving a short description about what the product will offer in a simple format. 
-          Followed by a list to help display the features available in this product.</em></p>
-        <p class="pLabel">What's Included</p>
+        <p class="pText"><em>The high-level version of our Data Analytics system, based on modern enterprise resource planning techniques, our software system will optimize your
+          business for increased efficency. The difference between our system and other commercial product is speed and our ability to customize the system to your specific business needs.</em></p>
+        <p class="pLabel">Service Details</p>
         <hr style="border:1px solid">
         <ul class="list">
-          <li>List Item One: A way to show a feature offered in a product.</li>
-          <li>List Item Two: Another way to show a feature offered.</li>
-          <li>List Item Three: You guessed it, another feature show-off.</li>
+          <li>A customizable system built to support all core business processes.</li>
+          <li>Processes included: 
+            <ul class="detail_container">
+              <li class="detailItem">Finance</li>
+              <li>Human Resources</li>
+              <li>Logistics Management</li>
+              <li>Maintenance Management</li>
+              <li>Sales and Distribution</li>
+              <li>Quality Management</li>
+              <li>Materials Management</li>
+              <li>Manufacturing Management</li>
+              <li>Strategic and Operational Planning</li>
+            </ul>
+          <li>A ISO Certified Quality Management System run by a former ISO certified auditor and management representative.</li>
           <li>List Item Four: Final Feature display.</li>
         </ul>
         <section class="bText bg-slate-700 drop-shadow-lg">
@@ -111,6 +122,16 @@ import HeaderLink from "./HeaderLink.astro";
   padding:5%;
   padding-top:25%;
   padding-bottom:25%;
+}
+.detailItem{
+  border-radius:10px;
+  background-color:#c4bfbf;
+
+}
+.detailContainer{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .product {
