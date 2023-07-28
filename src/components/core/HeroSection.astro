@@ -11,11 +11,11 @@ import HeaderLink from "./HeaderLink.astro";
     <HeaderLink href="#contact" class="text-2xl p-5 bg-slate-400 icon shadow-2xl m-10 z-10">Contact</HeaderLink>
     
   </section>
-  <div class="center"><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
-  <div class="center"><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
-  <div class="center"><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
-  <div class="center"><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
-  <div class="center"><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
+  <div ><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
+  <div><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
+  <div ><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
+  <div ><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
+  <div "><img src="logo.svg" alt="Logo" width="100px" height="100px"/></div>
   
 </article>
 <style>
@@ -99,7 +99,9 @@ import HeaderLink from "./HeaderLink.astro";
 }
 .background div {
     position: absolute;
-    display: block;
+    display: flex;
+    align-items:center;
+    justify-content:center;
     list-style: none;
     width: 20px;
     height: 20px;
