@@ -21,12 +21,12 @@
         <div class=" node">Your Business Data</div>
       </div>
 
-      <section class="flex arr">
-       <div class="test">&#8594;</div>
-
-        <span class="mt-5 p-2"> <p>Data<p><p>Pre-Processing</p></span>
+      <section class="mid">
+       <div class="test arr">&#8594;</div>
+        <span class="mt-5 p-2"> <p>Data</p><p>Pre-Processing</p></span>
         </div>
       </section>
+
       <div class="chart-pill chart-col">
         <p>IO Forge Data Analytics</p>
         <div class=" node">Data Analysis</div>
@@ -35,11 +35,11 @@
         <div class=" node">Market Data Correlation</div>
       </div>
 
-      <section class="flex arr">
-        <div class="test">&#8594;</div>
- 
-         <span class="mt-5 p-2"> <p>Data<p><p>Representation</p></span>
-         </div>
+     <section class="mid">
+       <div class="test arr">&#8594;</div>
+        <span class="mt-5 p-2"> <p>Analyzed</p><p>Data</p></span>
+        </div>
+      </section>
 
       <div class="chart-pill chart-col">
         <p>Output</p>
@@ -66,11 +66,12 @@
       <p>Input<p>
       <div class=" node">Analyzed and Cleaned Data</div>
     </div>
-    <section class="flex arr">
-      <div class="test">&#8594;</div>
 
-       <span class="mt-5 p-2"> <p>Data<p><p>Filtering</p></span>
-       </div>
+    <section class="mid">
+       <div class="test arr">&#8594;</div>
+        <span class="mt-5 p-2"> <p>Data<p></p>Filtering</p></span>
+        </div>
+      </section>
       
     <div class="chart-pill chart-col">
       <p>IO Forge Entreprise Resource Planning</p>
@@ -78,11 +79,11 @@
       <div class=" node">Machine Learning and Automation</div>
       <div class=" node">Industry Standard Correlation</div>
     </div>
-    <section class="flex arr">
-      <div class="test">&#8594;</div>
-
+    <section class="mid">
+      <div class="test arr">&#8594;</div>
        <span class="mt-5 p-2"> <p>Optimal<p><p>Data</p></span>
        </div>
+     </section>
 
     <div class="chart-pill chart-col">
       <div class=" node">Efficiency Suggestions</div>
@@ -110,12 +111,12 @@
         <div class=" node">Enterprise Resource Data from Step Two</div>
       </div>
 
-      <section class="flex arr">
-       <div class="test">&#8594;</div>
+      <section class="mid">
+        <div class="test arr">&#8594;</div>
+         <span class="mt-5 p-2"> <p>Data</p><p>Management</p></span>
+         </div>
+       </section>
 
-        <span class="mt-5 p-2"> <p>Data<p><p>Management</p></span>
-        </div>
-      </section>
       <div class="chart-pill chart-col">
         <p>IO Forge Web Platform</p>
         <div class=" node">Data Organized into Components</div>
@@ -124,11 +125,11 @@
         <div class=" node">Database and Analytical tools built into the Platform</div>
       </div>
 
-      <section class="flex arr">
-        <div class="test">&#8594;</div>
- 
-         <span class="mt-5 p-2"> <p>Data<p><p>Encryption</p></span>
+      <section class="mid">
+        <div class="test arr">&#8594;</div>
+         <span class="mt-5 p-2"> <p>Data</p><p>Encryption</p></span>
          </div>
+       </section>
 
       <div class="chart-pill chart-col">
         <p>Output</p>
@@ -147,12 +148,13 @@
 
 </article>
 <style>
-  .test{
-    font-size:50px;
-  }
-  .arr{
+  .mid{
     display:flex;
     flex-direction:column;
+    
+  }
+  .arr{
+    font-size:50px;
   }
   .container{
  height:auto;
@@ -237,44 +239,19 @@
   margin: auto -1em;
 }
 
-/* flowchart 2 */
-.arrow {
-  width: 120px;
-  height: 2px;
-  min-width: 3em;
-  
-  /* margin: auto -1em; */
-}
 
-.line {
-  margin-top: 14px;
-  width: 90px;
-  background: black;
-  height: 10px;
-  float: left;
-}
 
-.point {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 30px solid black;
-  float: right;
-}
 
 
 @media(max-width:900px){
   .chart-row {
     flex-direction: column;
   }
-  .line{
-    float:top;
-
+  .arr{
+    transform:rotate(-90);
   }
-  .point{
-    float:bottom;
-  }
+  
+ 
 }
 
 
