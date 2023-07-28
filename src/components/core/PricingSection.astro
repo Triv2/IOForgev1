@@ -2,15 +2,129 @@
 
 ---
 <article id="system" class="system center bg-slate-200">
+  
   <section class="title center shadow-lg bg-slate-100">
     <h2>The IO Forge System</h2>
-    
     </section>
+
   <article class="container shadow-lg bg-slate-100">
+    <section class="flex flex-col sTitle">
+    <h3>Data Analytics</h3>
+    <h4>Step One:</h4>
+    </section>
+    <section class="node_container">
 
-   
+      <div class="chart-row">
 
+      <div class="chart-pill chart-col">
+        <p>Input<p>
+        <div class=" node">Your Data</div>
+      </div>
+
+      <div class="arrow ">
+         <div class="line"></div>
+        <div class="point"></div>
+        <span> <p class="p-5 mt-5">Data Pre-Processing<p></span>
+        </div>
+        
+      <div class="chart-pill chart-col">
+        <p>IO Forge System</p>
+        <div class=" node">Data Analysis</div>
+        <div class=" node">Data Modeling</div>
+        <div class=" node">Market Data Correlation</div>
+      </div>
+
+      <div class="arrow ">
+        <div class="line"></div>
+       <div class="point"></div>
+       <span> <p class="p-5 mt-5">Simple Data Representations<p></span>
+       </div>
+
+      <div class="chart-pill chart-col">
+        <p>Output</p>
+        <div class=" node">Customizable visual representations of data.
+        </div>
+      </div>
+
+    </section>
 </article>
+
+<article class="container shadow-lg bg-slate-100">
+  <section class="flex flex-col sTitle">
+  <h3>Enterprise Resource Planning</h3>
+  <h4>Step Two:</h4>
+  </section>
+  <section class="node_container">
+
+    <div class="chart-row">
+    <div class="chart-pill chart-col">
+      <p>Input<p>
+      <div class=" node">Your Data</div>
+    </div>
+
+    <div class="arrow ">
+       <div class="line"></div>
+      <div class="point"></div>
+      <span> <p class="p-5 mt-5">Data Pre-Processing<p></span>
+      </div>
+      
+    <div class="chart-pill chart-col">
+      <div class=" node">beta</div>
+      <div class=" node">gamma</div>
+      <div class=" node">delta</div>
+    </div>
+
+    <div class="arrow ">
+      <div class="line"></div>
+     <div class="point"></div>
+     <span> <p class="p-5 mt-5">Data Pre-Processing<p></span>
+     </div>
+
+    <div class="chart-pill chart-col">
+      <div class=" node">gamma</div>
+    </div>
+
+  </section>
+</article>
+
+<article class="container shadow-lg bg-slate-100">
+  <section class="flex flex-col sTitle">
+  <h3>Web Portal and Platform</h3>
+  <h4>Step Three:</h4>
+  </section>
+  <section class="node_container">
+
+    <div class="chart-row">
+    <div class="chart-pill chart-col">
+      <p>Input<p>
+      <div class=" node">Your Data</div>
+    </div>
+
+    <div class="arrow ">
+       <div class="line"></div>
+      <div class="point"></div>
+      <span> <p class="p-5 mt-5">Data Pre-Processing<p></span>
+      </div>
+      
+    <div class="chart-pill chart-col">
+      <div class=" node">beta</div>
+      <div class=" node">gamma</div>
+      <div class=" node">delta</div>
+    </div>
+
+    <div class="arrow ">
+      <div class="line"></div>
+     <div class="point"></div>
+     <span> <p class="p-5 mt-5">Data Pre-Processing<p></span>
+     </div>
+
+    <div class="chart-pill chart-col">
+      <div class=" node">gamma</div>
+    </div>
+
+  </section>
+</article>
+
 </article>
 <style>
   .container{
@@ -18,7 +132,7 @@
  width:auto;
   padding:3%;
   
-    
+  flex-direction:column;
   display:flex;
   gap:20px;
   margin-bottom:15%;
@@ -42,4 +156,115 @@
     color:rgb(100, 100, 100);
 
 }
+.sTitle{
+  border-radius:10px;
+  font-weight:bold;
+  margin-bottom:10%;
+  font-size:30px;
+  color:rgb(100, 100, 100);
+}
+
+/* flowchart 1 */
+
+.node_container{
+
+}
+
+.chart-row,
+.chart-col {
+  display: flex;
+  gap: 1em;
+}
+
+.chart-row {
+  flex-direction: row;
+}
+
+.chart-col {
+  flex-direction: column;
+}
+
+.chart-pill,
+.node {
+  padding: 1em;
+  text-align: center;
+  border: 2px solid #999;
+}
+
+.chart-pill {
+  flex: 1;
+  border-radius: 1em;
+  border-style: dashed;
+}
+
+.node {
+  flex: 0;
+  margin: auto 0;
+  background: #eee;
+}
+
+.chart-line-h {
+  height: 2px;
+  min-width: 3em;
+  background: #999;
+  margin: auto -1em;
+}
+
+/* flowchart 2 */
+.arrow {
+  width: 120px;
+  height: 2px;
+  min-width: 3em;
+  
+  margin: auto -1em;
+}
+
+.line {
+  margin-top: 14px;
+  width: 90px;
+  background: black;
+  height: 10px;
+  float: left;
+}
+
+.point {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid black;
+  float: right;
+}
+
+ /* CSS styles for the flow-chart components */
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.2;
+    }
+  }
+
+  .node {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .node:hover {
+    animation: fadeOut 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+
 </style>
