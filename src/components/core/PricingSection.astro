@@ -8,26 +8,25 @@
     </section>
 
   <article class="container shadow-lg bg-slate-100">
+
     <section class="flex flex-col sTitle">
-    <h3>Data Analytics</h3>
-    <h4>Step One:</h4>
+    <h3 class="sTitle">Data Analytics</h3>
+    <h4 class="subTitle">Process</h4>
     </section>
+
     <section class="node_container">
-
-      <div class="chart-row">
-
-      <div class="chart-pill chart-col">
+      <div class="pill">
         <p>Input<p>
         <div class=" node">Your Business Data</div>
       </div>
 
       <section class="mid">
-       <div class="test arr">&#8594;</div>
-        <span class="mt-5 p-2"> <p>Data</p><p>Pre-Processing</p></span>
+       <div class="arr">&#8594;</div>
+        <span class="p-2"><p>Data</p><p>Pre-Processing</p></span>
         </div>
       </section>
 
-      <div class="chart-pill chart-col">
+      <div class="pill">
         <p>IO Forge Data Analytics</p>
         <div class=" node">Data Analysis</div>
         <div class=" node">Data Modeling</div>
@@ -36,12 +35,12 @@
       </div>
 
      <section class="mid">
-       <div class="test arr">&#8594;</div>
-        <span class="mt-5 p-2"> <p>Analyzed</p><p>Data</p></span>
+       <div class="arr">&#8594;</div>
+        <span class=" p-2"> <p>Analyzed</p><p>Data</p></span>
         </div>
       </section>
 
-      <div class="chart-pill chart-col">
+      <div class="pill">
         <p>Output</p>
         <div class=" node">Graphs
         </div>
@@ -55,37 +54,37 @@
 </article>
 
 <article class="container shadow-lg bg-slate-100">
-  <section class="flex flex-col sTitle">
-  <h3>Enterprise Resource Planning</h3>
-  <h4>Step Two:</h4>
+  <section class="flex flex-col ">
+  <h3 class="sTitle">Enterprise Resource Planning</h3>
+  <h4 class="subTitle">System</h4>
   </section>
   <section class="node_container">
 
-    <div class="chart-row">
-    <div class="chart-pill chart-col">
+  
+    <div class="pill">
       <p>Input<p>
       <div class=" node">Analyzed and Cleaned Data</div>
     </div>
 
     <section class="mid">
-       <div class="test arr">&#8594;</div>
-        <span class="mt-5 p-2"> <p>Data<p></p>Filtering</p></span>
+       <div class="arr">&#8594;</div>
+        <span class="p-2"> <p>Data<p></p>Filtering</p></span>
         </div>
       </section>
       
-    <div class="chart-pill chart-col">
+    <div class="pill">
       <p>IO Forge Entreprise Resource Planning</p>
       <div class=" node">Smart Data Organization</div>
       <div class=" node">Machine Learning and Automation</div>
       <div class=" node">Industry Standard Correlation</div>
     </div>
     <section class="mid">
-      <div class="test arr">&#8594;</div>
-       <span class="mt-5 p-2"> <p>Optimal<p><p>Data</p></span>
+      <div class="arr">&#8594;</div>
+       <span class=" p-2"> <p>Optimal<p><p>Data</p></span>
        </div>
      </section>
 
-    <div class="chart-pill chart-col">
+    <div class="pill ">
       <div class=" node">Efficiency Suggestions</div>
       <div class=" node">Highlights vulnerabilities or issues based on priority</div>
       <div class=" node">A system for non-stop improvements</div>
@@ -96,28 +95,28 @@
 </article>
 
 <article class="container shadow-lg bg-slate-100">
-  <section class="flex flex-col sTitle">
-    <h3>Web Portal and Platform</h3>
-    <h4>Step Three:</h4>
+  <section class="flex flex-col">
+    <h3 class="sTitle">Web Portal</h3>
+    <h4 class="subTitle">Platform</h4>
     </section>
     <section class="node_container">
 
-      <div class="chart-row">
+      
 
-      <div class="chart-pill chart-col">
+      <div class="pill ">
         <p>Input<p>
-        <div class=" node">Analyzed Data from Step One</div>
+        <div class=" node">Data from Data Analytics Process</div>
         <p>or</p>
-        <div class=" node">Enterprise Resource Data from Step Two</div>
+        <div class=" node">Data from Enterprise Resource Planning System</div>
       </div>
 
       <section class="mid">
-        <div class="test arr">&#8594;</div>
-         <span class="mt-5 p-2"> <p>Data</p><p>Management</p></span>
+        <div class="arr">&#8594;</div>
+         <span class=" p-2"> <p>Data</p><p>Management</p></span>
          </div>
        </section>
 
-      <div class="chart-pill chart-col">
+      <div class="pill">
         <p>IO Forge Web Platform</p>
         <div class=" node">Data Organized into Components</div>
         <div class=" node">Components attached to widgets to create customizable dashboard.</div>
@@ -126,12 +125,12 @@
       </div>
 
       <section class="mid">
-        <div class="test arr">&#8594;</div>
-         <span class="mt-5 p-2"> <p>Data</p><p>Encryption</p></span>
+        <div class="arr">&#8594;</div>
+         <span class="p-2"> <p>Data</p><p>Encryption</p></span>
          </div>
        </section>
 
-      <div class="chart-pill chart-col">
+      <div class="pill">
         <p>Output</p>
         <div class=" node">Remote Access Web Portal
         </div>
@@ -148,14 +147,7 @@
 
 </article>
 <style>
-  .mid{
-    display:flex;
-    flex-direction:column;
-    
-  }
-  .arr{
-    font-size:50px;
-  }
+  
   .container{
  height:auto;
  width:auto;
@@ -188,42 +180,51 @@
 .sTitle{
   border-radius:10px;
   font-weight:bold;
-  margin-bottom:10%;
+  
   font-size:30px;
+  color:rgb(100, 100, 100);
+}
+.subTitle{
+  
+  font-weight:bold;
+  margin-bottom:10%;
+  font-size:24px;
   color:rgb(100, 100, 100);
 }
 
 /* flowchart 1 */
 
 .node_container{
-
+  display:flex;
+  flex-direction:row;
 }
+.mid{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+  }
+  .arr{
+    font-size:50px;
+    
+  }
 
-.chart-row,
-.chart-col {
-  display: flex;
-  gap: 1em;
-}
 
-.chart-row {
-  flex-direction: row;
-}
-
-.chart-col {
-  flex-direction: column;
-}
-
-.chart-pill,
+.pill,
 .node {
   padding: 1em;
   text-align: center;
   border: 2px solid #999;
 }
 
-.chart-pill {
+.pill {
   flex: 1;
   border-radius: 1em;
   border-style: dashed;
+  display: flex;
+  gap: 1em;
+  flex-direction:column;
 }
 
 .node {
@@ -232,23 +233,19 @@
   background: #eee;
 }
 
-.chart-line-h {
-  height: 2px;
-  min-width: 3em;
-  background: #999;
-  margin: auto -1em;
-}
-
 
 
 
 
 @media(max-width:900px){
-  .chart-row {
+  .node_container{
     flex-direction: column;
   }
+  .mid{
+    flex-direction:row;
+  }
   .arr{
-    transform:rotate(-90);
+    transform:rotate(90deg);
   }
   
  
