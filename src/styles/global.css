@@ -3,7 +3,6 @@
   place-items:center;
 }
 
-
 .title{
   padding:5%;
 }
@@ -22,3 +21,32 @@ section{
   width:auto !important;
   height:auto!important;
 }
+
+.core_section{
+  height:auto;
+  width:auto;
+  padding:5%;
+  padding-top:10%;
+  padding-bottom:25%;
+}
+@media(max-width:900px){
+
+}
+
+@media(max-width:700px){
+ .core_section{
+   
+      padding-top:75%;
+    }
+  }
+
+@media(max-width:400px){
+   .core_section{
+      padding-top:100%;
+    }
+  }
+@media(max-width:350px){
+    .core_section{
+       padding-top:120%;
+     }
+   }
