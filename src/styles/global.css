@@ -9,6 +9,21 @@
 
 h1,h2,h3,p,body{
   font-family: 'Lato', sans-serif;
+}
+.h1Text{
+  font-size:80px;
+}
+.h2Text{
+  font-size:50px;
+}
+.h3Text{
+  font-size:40px;
+}
+.h4Text{
+  font-size:30px;
+}
+.pText{
+  font-size:25px;
 } 
 
 .responsive{
@@ -30,7 +45,22 @@ section{
   padding-bottom:25%;
 }
 @media(max-width:900px){
-
+  .h1Text{
+    font-size:60px;
+  }
+  .h2Text{
+    font-size:40px;
+  }
+  .h3Text{
+    font-size:30px;
+  }
+  .h4Text{
+    font-size:25px;
+  }
+  .pText{
+    font-size:25px;
+  } 
+  
 }
 
 @media(max-width:700px){
@@ -38,15 +68,63 @@ section{
    
       padding-top:75%;
     }
+    .h1Text{
+      font-size:50px;
+    }
+    .h2Text{
+      font-size:35px;
+    }
+    .h3Text{
+      font-size:30px;
+    }
+    .h4Text{
+      font-size:25px;
+    }
+    .pText{
+      font-size:25px;
+    } 
+    
   }
 
 @media(max-width:400px){
    .core_section{
       padding-top:100%;
     }
+    /* .h1Text{
+      font-size:40px;
+    }
+    .h2Text{
+      font-size:30px;
+    }
+    .h3Text{
+      font-size:25px;
+    }
+    .h4Text{
+      font-size:22px;
+    }*/
+    .pText{
+      font-size:20px;
+    } 
+     
   }
 @media(max-width:350px){
     .core_section{
        padding-top:120%;
      }
+     /* .h1Text{
+      font-size:30px;
+    }
+    .h2Text{
+      font-size:25px;
+    }
+    .h3Text{
+      font-size:22px;
+    }
+    .h4Text{
+      font-size:20px;
+    }
+    .pText{
+      font-size:18px;
+    } 
+     */
    }
