@@ -24,6 +24,9 @@ h1,h2,h3,p,body{
 }
 .pText{
   font-size:25px;
+}
+.btnText{
+  font-size:20px;
 } 
 
 .responsive{

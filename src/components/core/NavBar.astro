@@ -9,16 +9,16 @@ import HeaderLink from "./HeaderLink.astro";
 		<span class="logo text-2xl flex items-center"><img src="/logo.svg" width="50px" height="30px" alt="logo"></picture><HeaderLink href="/">I. O. Forge</HeaderLink></span>
 		
 		<div id="navItems" class="navItems">
-			<HeaderLink class="shadow-lg" href="#about">About</HeaderLink>
-			<HeaderLink class="shadow-lg" href="#features">Features</HeaderLink>
-			<HeaderLink class="shadow-lg" href="#product">Products and Services</HeaderLink>
-			<HeaderLink class="shadow-lg" href="#system">System Design</HeaderLink>
-			<HeaderLink class="shadow-lg" href="#contact">Contact</HeaderLink>
+			<HeaderLink class="shadow-lg btnText" href="#about">About</HeaderLink>
+			<HeaderLink class="shadow-lg btnText" href="#features">Features</HeaderLink>
+			<HeaderLink class="shadow-lg btnText" href="#product">Products and Services</HeaderLink>
+			<HeaderLink class="shadow-lg btnText" href="#system">System Design</HeaderLink>
+			<HeaderLink class="shadow-lg btnText" href="#contact">Contact</HeaderLink>
 		</div>
 		<div class="menu p-5">
 			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   	<a id="menuButton"  class="icon shadow-lg" >
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars pText"></i>
   </a>
 	</div>
 	</nav>
@@ -128,7 +128,7 @@ import HeaderLink from "./HeaderLink.astro";
 	}
 
 
-	@media (max-width:700px) {
+	@media (max-width:900px) {
 		.navItems{
 			flex-direction: column;
 		}
