@@ -34,7 +34,7 @@ import HeaderLink from "./HeaderLink.astro";
      </div>
     </section>
 
-    <section class="product bg-slate-400 bg-slate-300 text-white drop-shadow-lg">
+    <section class="product bg-slate-400  text-white drop-shadow-lg">
       <span>
         <picture class="product_one" ></picture>
       </span>
@@ -124,7 +124,7 @@ import HeaderLink from "./HeaderLink.astro";
   height:auto;
   width:auto;
   padding:5%;
-  padding-top:25%;
+  padding-top:10%;
   padding-bottom:25%;
 }
 .detailItem{
@@ -244,6 +244,9 @@ h2,p{
       
       width:100%;
     }
+    .products{
+      padding-top:75%;
+    }
     .product{
       width:100%;
       margin:0%;
@@ -257,12 +260,14 @@ h2,p{
     .imagesContainer{
   
   flex-direction:row;
-}
+    }
 		.product_one{
       min-height:125px;
       min-width:125px;
     }
 	}
-
+  @media(max-width:400px){
+  
+}
   
 </style>
