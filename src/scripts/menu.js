@@ -1,6 +1,7 @@
 const menuButton=document.getElementById("menuButton");
 const menuItems=document.getElementById("navItems");
 const body=document.getElementById("body");
+const logo=document.getElementById("logo");
 
 menuButton.addEventListener("click", function(){
 //   if (menuItems.style.visibility === "visible") {
@@ -10,6 +11,7 @@ menuButton.addEventListener("click", function(){
 // } 
   if (menuItems.style.display=== "none") {
     menuItems.style.display = "flex";
+    // logo.style.display= "flex";
   } else {
     menuItems.style.display = "none";
   }
@@ -22,6 +24,7 @@ body.addEventListener('click', function(event) {
   let isClickInside = menuItems.contains(event.target);
   if (!isClickInside) {
     menuItems.style.display = "none";
+    // logo.style.display = "none";
   }
 });
 

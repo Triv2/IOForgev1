@@ -105,12 +105,12 @@ section{
    .core_section{
       padding-top:80%;
     }
-    /* .h1Text{
+     .h1Text{
       font-size:40px;
     }
     .h2Text{
       font-size:30px;
-    }
+    }/*
     .h3Text{
       font-size:25px;
     }
@@ -125,6 +125,9 @@ section{
 @media(max-width:420px){
     .core_section{
        padding-top:100%;
+     }
+     .btnText{
+      font-size:18px;
      }
      /* .h1Text{
       font-size:30px;
@@ -147,6 +150,9 @@ section{
     .core_section{
       
        padding-top:120%;
+     }
+     .btnText{
+      font-size:16px;
      }
     }
    

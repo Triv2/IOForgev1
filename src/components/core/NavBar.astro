@@ -6,7 +6,7 @@ import HeaderLink from "./HeaderLink.astro";
 <header class="sticky top-0 z-50 shadow-md" >
 	
 	<nav>
-		<span class="logo text-2xl flex items-center"><img src="/logo.svg" width="50px" height="30px" alt="logo"></picture><HeaderLink href="/">I. O. Forge</HeaderLink></span>
+		<span ><HeaderLink id="logo" class="logo" href="/"><img src="/logo.svg" width="50px" height="30px" alt="logo"><p class="pText font-bold text-center">I. O. Forge</p></HeaderLink></span>
 		
 		<div id="navItems" class="navItems">
 			<HeaderLink class="shadow-lg btnText" href="#about">About</HeaderLink>
@@ -49,12 +49,14 @@ import HeaderLink from "./HeaderLink.astro";
 		margin:15px;
 		display:flex;
 		flex-direction:row;
-		--tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+		justify-content: center;
+		align-items:center;
 	}
 	.logo:hover{
 		transform: scale(1.1);
 	color:cadetblue;
+	--tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 	}
 
 	.navItems{
@@ -137,11 +139,15 @@ import HeaderLink from "./HeaderLink.astro";
 	
 		
 	}
-	@media(max-width:420px){
+	
+	@media(max-width:380px){
 		.navItems{
-			font-size: 14px;
+			font-size:12px;
 		}
-		
+		.logo{
+			flex-direction: column;
+			
+		}
 	}
 
 </style>

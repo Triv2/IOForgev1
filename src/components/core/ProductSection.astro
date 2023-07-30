@@ -10,7 +10,7 @@ import HeaderLink from "./HeaderLink.astro";
 
     <section class="product bg-slate-100  text-white drop-shadow-lg">
       <div class="p-10">
-        <img class="product_one" width="500px" height="500px" ></img>
+        <img loading ="lazy" alt="product1" src="./ioproduct1.svg"class="product_one" width="500px" height="500px" ></img>
         </div>
       
       <div class="text bg-slate-200">
@@ -36,7 +36,7 @@ import HeaderLink from "./HeaderLink.astro";
 
     <section class="product bg-slate-100  text-white drop-shadow-lg">
       <div class="p-10">
-        <img class="product_one" width="500px" height="500px" ></img>
+        <img loading ="lazy" alt="product2" src="./ioproduct1.svg"class="product_one" width="500px" height="500px" ></img>
         </div>
       <div class="text bg-slate-200">
         <section class=" pTitle bg-slate-500">
@@ -71,7 +71,7 @@ import HeaderLink from "./HeaderLink.astro";
 
 <section class="product bg-slate-100 text-white drop-shadow-lg">
   <div class="p-10">
-    <img class="product_one" width="500px" height="500px" ></img>
+    <img loading ="lazy" alt="product3" src="./ioproduct1.svg" class="product_one" width="500px" height="500px" ></img>
     </div>
 
   <div class="text bg-slate-200">
@@ -253,5 +253,14 @@ h2,p{
       min-width:250px;
     }
 	}
+@media(max-width:350px){
+  .product_container{
+    padding:0%;
+  }
+  .product_one{
+      min-height:150px;
+      min-width:150px;
+    }
+}
  
 </style>

@@ -6,9 +6,18 @@
     <h2 class="h2Text" >Features of IO Forge</h2>
     </section>
   <article class="feature_container bg-slate-100  ">
+
+    <section class="feature">
+      <img class="feature_one" width="150px" height="150px" alt="feature2" loading="lazy" src="./ioproduct1.svg">
+    <section class="text">
+      <h3 class="fTitle h3Text">Database-Driven</h3>
+      <p class="fText pText"><em>Hard-coded processes and algorithms are built into the database to enhance performance.</em></p>
+      <p class="fText pText"><em>Relational and Non-Relational Databases are supported</em></p>
+    </section>
+  </section>
     
     <section class="feature bg-slate-200">
-      <figure class="feature_one"></figure>
+      <img class="feature_one" src="./ioproduct1.svg" width="150px" height="150px" alt="feature1" loading="lazy" src="./ioproduct1.svg" >
     <section class="text bg-slate-100">
       <h3 class="fTitle h3Text">Data Analysis</h3>
       <p class="fText pText"><em>We can connect your current system to our database and integrate all your data into our system.</em></p>
@@ -16,26 +25,18 @@
     </section>
   </section>
 
+ 
   <section class="feature">
-    <figure class="feature_one"></figure>
+    <img class="feature_one" width="150px" height="150px" alt="feature3" loading="lazy" src="./ioproduct1.svg">
   <section class="text">
-    <h3 class="fTitle h3Text">Database-Driven</h3>
-    <p class="fText pText"><em>Hard-coded processes and algorithms are built into the database to enhance performance.</em></p>
-    <p class="fText pText"><em></em></p>
+    <h3 class="fTitle h3Text">Machine Learning and Automation</h3>
+    <p class="fText pText"><em>Machine Learning algorithims with analyze and optimize your data.</em></p>
+    <p class="fText pText"><em>Automation will be applied where it can be to further increase efficency. </em></p>
   </section>
-</section>
-
-   <section class="feature">
-      <figure class="feature_one"></figure>
-    <section class="text">
-      <h3 class="fTitle h3Text">Machine Learning and Automation</h3>
-      <p class="fText pText"><em>Machine Learning algorithims with analyze and optimize your data.</em></p>
-      <p class="fText pText"><em>Automation will be applied where it can be to further increase efficency. </em></p>
-    </section>
   </section>
 
   <section class="feature">
-    <figure class="feature_one"></figure>
+    <img class="feature_one" width="150px" height="150px" alt="feature4" loading="lazy" src="./ioproduct1.svg">
   <section class="text">
     <h3 class="fTitle h3Text">Enterprise Resource Planning</h3>
     <p class="fText pText"><em>This the advanced level of the system, it provides high level control over all aspects of your company.</em></p>
@@ -44,7 +45,16 @@
 </section>
 
 <section class="feature">
-  <figure class="feature_one"></figure>
+  <img class="feature_one" width="150px" height="150px" alt="feature6" loading="lazy" src="./ioproduct1.svg">
+<section class="text">
+  <h3 class="fTitle h3Text">Website and App Development</h3>
+  <p class="fText pText"><em>Front-End and Back-End development using modern frameworks and libraries.</em></p>
+  <p class="fText pText"><em>We can add a web-facing presence to your company with modern web-design techniques.</em></p>
+</section>
+</section>
+
+<section class="feature">
+  <img class="feature_one" width="150px" height="150px" alt="feature5" loading="lazy" src="./ioproduct1.svg">
 <section class="text">
   <h3 class="fTitle h3Text">Web Portals and Platforms</h3>
   <p class="fText pText"><em>We integrate all these features into customizable widget components to create dashboards for operation.</em></p>
@@ -52,14 +62,7 @@
 </section>
 </section>
 
-<section class="feature">
-  <figure class="feature_one"></figure>
-<section class="text">
-  <h2 class="fTitle h3Text">Website and App Development</h2>
-  <p class="fText pText"><em>Front-End and Back-End development using modern frameworks and libraries.</em></p>
-  <p class="fText pText"><em>We can add a web-facing presence to your company with modern web-design techniques.</em></p>
-</section>
-</section>
+
 
 
 
@@ -70,9 +73,10 @@
   height:auto;
   width:100%;
   padding:5%;
+  padding-bottom:40%;
   display:grid;
   grid-template-columns: 47% 48%;
-  grid-template-rows: 30% 30% 30%; 
+  grid-template-rows: 33% 33% 33%; 
   column-gap: 5%;
   row-gap: 5%;
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -105,10 +109,14 @@
   border:1px solid black;
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-column: auto;
+  place-items:center;
+
+  /* flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+
   height:auto; 
   width:auto;
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
@@ -116,11 +124,11 @@
   border-radius:10px;
   padding-left:10%;
   padding-right:10%;
-  padding-top:25%;
+  padding-top:10%;
   padding-bottom:25%;
 }
 .feature_one{
-  background-image:url("/ioproduct1.svg");
+  
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -128,13 +136,13 @@
   min-height:200px;
   min-width:200px;
   margin:5%;
-  max-width:100%;
+  max-width:auto;
   height:auto;
-  padding:20%;
+
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-h2{
+h3{
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
