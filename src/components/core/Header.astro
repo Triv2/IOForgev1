@@ -1,7 +1,12 @@
 ---
 
 import '../../styles/global.css';
+const title= "IO Forge- Data Analytics, Enterprise Resource Planning, and Web Platforms";
+const description="Enterprise resource planning, data analytics, and web platforms with machine learning and automation using software as a service.";
+const url="https://ioforge.us";
+const image="./logo.svg";
 ---
+
 <head>
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +18,35 @@ import '../../styles/global.css';
 
 
 
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
-  <title>Astro</title>
+<meta charset="utf-8" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>{title}</title>
+  
+  
+
+  <!-- Primary Meta Tags -->
+<meta name="title" content={title} />
+<meta name="description" content={description}/>
+<link rel="canonical" href={url}/>
+
+<!-- Generator -->
+<meta name="generator" content={Astro.generator} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<!-- <meta property="og:image" content={image} /> -->
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:url" content={url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<!-- <meta property="twitter:image" content={image} /> -->
+
+
+
 </head>
