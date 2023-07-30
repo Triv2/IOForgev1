@@ -5,11 +5,11 @@
     <section class="title center bg-slate-100">
     <h2 class="h2Text" >Features of IO Forge</h2>
     </section>
-  <article class="feature_container bg-slate-300  text">
+  <article class="feature_container bg-slate-100  ">
     
-    <section class="feature">
+    <section class="feature bg-slate-200">
       <figure class="feature_one"></figure>
-    <section class="text">
+    <section class="text bg-slate-100">
       <h3 class="fTitle h3Text">Data Analytics</h3>
       <p class="fText pText"><em>We can connect your current system to your database and integrate all your data into our system.</em></p>
       <p class="fText pText"><em>Our programming data analysts make this a seamless transition with data pre-processing tools and techniques. </em></p>
@@ -29,8 +29,8 @@
       <figure class="feature_one"></figure>
     <section class="text">
       <h3 class="fTitle h3Text">Machine Learning and Automation</h3>
-      <p class="fText pText"><em>Inside the database, your data will be organized and output into different types of data visualizations with suggestions on possible improvements.</em></p>
-      <p class="fText pText"><em>The machine learning algorithms within the database will learn off historical data, and all data going forward to optimize it's suggestions. </em></p>
+      <p class="fText pText"><em>Machine Learning algorithims with analyze and optimize your data.</em></p>
+      <p class="fText pText"><em>Automation will be applied where it can be to further increase efficency. </em></p>
     </section>
   </section>
 
@@ -93,16 +93,24 @@
   margin-bottom:10%;
   
 }
-
+.text{
+  padding:5%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  border-radius:10px;
+  border:1px solid black;
+}
 
 .feature {
+  border:1px solid black;
   --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  
+  height:auto; 
+  width:auto;
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   border-radius:10px;
@@ -131,18 +139,19 @@ h2{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .fTitle{
-  color: whitesmoke;
+  color: black;
   font-weight:bold;
 
   
 }
 .fText{
-  color: whitesmoke;
+  color: BLACK;
+  
  
 }
 @media (max-width:900px) {
 		.feature_container{
-      padding:0%;
+      padding:5%;
       width:100%;
       display:flex;
       flex-direction: column;
