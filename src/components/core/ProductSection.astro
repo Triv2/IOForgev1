@@ -9,11 +9,12 @@ import HeaderLink from "./HeaderLink.astro";
   <article class="product_container shadow-lg bg-slate-200">
 
     <section class="product bg-slate-100  text-white drop-shadow-lg">
-      <span class="imagesContainer">
-        <picture class="product_one" ></picture>
-      </span>
-      <div class="text">
-        <section class=" pTitle bg-slate-400">
+      <div class="p-10">
+        <img class="product_one" width="500px" height="500px" ></img>
+        </div>
+      
+      <div class="text bg-slate-200">
+        <section class=" pTitle bg-slate-500">
         <h3 class="h3Text" >Data Analytics</h3>
         </section>
         <p class="pText">This toolset is the main part of our software solutions system.</p>
@@ -33,11 +34,11 @@ import HeaderLink from "./HeaderLink.astro";
      </div>
     </section>
 
-    <section class="product bg-slate-400  text-white drop-shadow-lg">
-      <span class="imagesContainer">
-        <picture class="product_one" ></picture>
-      </span>
-      <div class="text">
+    <section class="product bg-slate-100  text-white drop-shadow-lg">
+      <div class="p-10">
+        <img class="product_one" width="500px" height="500px" ></img>
+        </div>
+      <div class="text bg-slate-200">
         <section class=" pTitle bg-slate-500">
         <h3 class="h3Text">Enterprise Resource Planning</h3>
         </section>
@@ -68,12 +69,12 @@ import HeaderLink from "./HeaderLink.astro";
      </div>
     </section>
 
-<section class="product bg-slate-400 text-white drop-shadow-lg">
-  <span class="imagesContainer">
-    <picture class="product_one" ></picture>
-  </span>
+<section class="product bg-slate-100 text-white drop-shadow-lg">
+  <div class="p-10">
+    <img class="product_one" width="500px" height="500px" ></img>
+    </div>
 
-  <div class="text">
+  <div class="text bg-slate-200">
     <section class=" pTitle bg-slate-500">
     <h3 class= "h3Text" >Web and App Platforms</h3>
     </section>
@@ -136,7 +137,8 @@ import HeaderLink from "./HeaderLink.astro";
 
 .product {
   background: #c4bfbf;
-  padding:5%;
+  padding-top:5%; 
+  padding-bottom:5%;
   display: flex;
   flex-direction:column;
   align-items: center;
@@ -149,12 +151,7 @@ import HeaderLink from "./HeaderLink.astro";
   border-radius:10px;
   width:auto;
 }
-.imagesContainer{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  padding:5%;
-}
+
 .title{
     color:rgb(100, 100, 100);
     font-weight:bold;
@@ -184,14 +181,12 @@ import HeaderLink from "./HeaderLink.astro";
   background-repeat: no-repeat;
   background-position: center;
   display:flex;
-  min-height:250px;
-  min-width:250px;
-  max-height:fit-content;
-  max-width:fit-content;
+  min-height:175px;
+  min-width:175px;
+  max-height:auto;
+  max-width:auto;
   border-radius:10px;
-  max-width:100%;
-  height:auto;
-  padding:20%;
+  
 }
 .pTitle{
   font-weight:bold;
@@ -203,6 +198,7 @@ import HeaderLink from "./HeaderLink.astro";
   font-weight:bold;
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+  
 }
 h2{
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
