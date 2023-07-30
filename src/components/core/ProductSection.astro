@@ -8,12 +8,12 @@ import HeaderLink from "./HeaderLink.astro";
   </section>
   <article class="product_container shadow-lg bg-slate-200">
 
-    <section class="product bg-slate-400  text-white drop-shadow-lg">
+    <section class="product bg-slate-100  text-white drop-shadow-lg">
       <span class="imagesContainer">
         <picture class="product_one" ></picture>
       </span>
       <div class="text">
-        <section class=" pTitle bg-slate-500">
+        <section class=" pTitle bg-slate-400">
         <h3 class="h3Text" >Data Analytics</h3>
         </section>
         <p class="pText">This toolset is the main part of our software solutions system.</p>
@@ -34,7 +34,7 @@ import HeaderLink from "./HeaderLink.astro";
     </section>
 
     <section class="product bg-slate-400  text-white drop-shadow-lg">
-      <span>
+      <span class="imagesContainer">
         <picture class="product_one" ></picture>
       </span>
       <div class="text">
@@ -69,9 +69,10 @@ import HeaderLink from "./HeaderLink.astro";
     </section>
 
 <section class="product bg-slate-400 text-white drop-shadow-lg">
-  <span>
+  <span class="imagesContainer">
     <picture class="product_one" ></picture>
   </span>
+
   <div class="text">
     <section class=" pTitle bg-slate-500">
     <h3 class= "h3Text" >Web and App Platforms</h3>
@@ -101,10 +102,10 @@ import HeaderLink from "./HeaderLink.astro";
   padding:5%;
   display:flex;
   flex-direction:column;
-  gap:5%;
+  
   margin-bottom:0%;
   border-radius:10px;
-  
+  gap:100px;
   
 }
 .list{
@@ -137,6 +138,7 @@ import HeaderLink from "./HeaderLink.astro";
   background: #c4bfbf;
   padding:5%;
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: space-evenly;
   gap:5px;
@@ -160,11 +162,11 @@ import HeaderLink from "./HeaderLink.astro";
   margin-bottom:10%;
 }
 .pText{
-  color:whitesmoke;
-  font-size:24px;
+  color:black;
+  
 }
 .text{
-  border:1px white solid;
+  border:1px black solid;
   padding:5px;
   width:80%;
   border-radius:10px;
