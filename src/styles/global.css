@@ -28,6 +28,9 @@ h1,h2,h3,p,body{
 .btnText{
   font-size:20px;
 } 
+.hide{
+  display:none;
+}
 
 .responsive{
   max-width:100%;

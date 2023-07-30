@@ -1,5 +1,6 @@
 const menuButton=document.getElementById("menuButton");
 const menuItems=document.getElementById("navItems");
+const body=document.getElementById("body");
 
 menuButton.addEventListener("click", function(){
 //   if (menuItems.style.visibility === "visible") {
@@ -13,4 +14,15 @@ menuButton.addEventListener("click", function(){
     menuItems.style.display = "none";
   }
 });
+
+// a function that will hide the menu when the user clicks outside of it
+
+
+body.addEventListener('click', function(event) {
+  let isClickInside = menuItems.contains(event.target);
+  if (!isClickInside) {
+    menuItems.style.display = "none";
+  }
+});
+
 
