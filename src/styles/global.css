@@ -47,7 +47,7 @@ section{
   padding-top:10%;
   padding-bottom:25%;
 }
-@media(max-width:900px){
+@media(max-width:1000px){
   .h1Text{
     font-size:60px;
   }
@@ -63,13 +63,17 @@ section{
   .pText{
     font-size:25px;
   } 
+  .core_section{
+   
+    padding-top:40%;
+  }
   
 }
 
-@media(max-width:700px){
+@media(max-width:750px){
  .core_section{
    
-      padding-top:75%;
+      padding-top:50%;
     }
     .h1Text{
       font-size:50px;
@@ -88,10 +92,15 @@ section{
     } 
     
   }
+@media(max-width:650px){
+  .core_section{
+    padding-top:60%;
+  }
+}
 
-@media(max-width:400px){
+@media(max-width:500px){
    .core_section{
-      padding-top:100%;
+      padding-top:80%;
     }
     /* .h1Text{
       font-size:40px;
@@ -110,9 +119,9 @@ section{
     } 
      
   }
-@media(max-width:350px){
+@media(max-width:420px){
     .core_section{
-       padding-top:120%;
+       padding-top:100%;
      }
      /* .h1Text{
       font-size:30px;
@@ -131,3 +140,10 @@ section{
     } 
      */
    }
+   @media(max-width:365px){
+    .core_section{
+      
+       padding-top:120%;
+     }
+    }
+   
