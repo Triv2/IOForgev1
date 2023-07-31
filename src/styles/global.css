@@ -4,7 +4,7 @@
 }
 
 .title{
-  padding:5%;
+  padding:5vh;
 }
 
 h1,h2,h3,p,body{
@@ -23,7 +23,7 @@ h1,h2,h3,p,body{
   font-size:clamp(1.8rem,3vw,2.4rem);
 }
 .pText{
-  font-size:clamp(1.2rem,2.5vw,1.6rem);
+  font-size:clamp(1.6rem,2.5vw,1.6rem);
 }
 .btnText{
   font-size:clamp(1.2rem,1.5vw,1.4rem);
@@ -46,52 +46,16 @@ section{
 .core_section{
   height:auto;
   width:auto;
-  padding:5%;
-  padding-top:10vh;
+  padding:5vw;
+  padding-top:clamp(20vh,30vh,50vh);
   padding-bottom:25vh;
 }
 
-@media(max-width:1000px){
+/* @media(max-width:1000px){
 
   .core_section{
    
-    padding-top:40%;
+    padding-top:35vh;
   }
   
-}
-
-@media(max-width:750px){
- .core_section{
-   
-      padding-top:50%;
-    }
-   
-    
-  }
-@media(max-width:650px){
-  .core_section{
-    padding-top:60%;
-  }
-}
-
-@media(max-width:500px){
-   .core_section{
-      padding-top:80%;
-    }
-
-     
-  }
-@media(max-width:420px){
-    .core_section{
-       padding-top:100%;
-     }
-  
-   }
-   @media(max-width:365px){
-    .core_section{
-      
-       padding-top:120%;
-     }
-     
-    }
-   
+} */

@@ -1,10 +1,10 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 ---
-<article id="/" class=" hero responsive background ">
+<article id="/" class=" hero responsive background center">
   <section class="center hero_container ">
     <section class="z-10 top mb-10">
-    <img loading="lazy" src="nlogo4_lg.webp" alt="hero logo" width="250px" height="250px"/>
+    <img  src="nlogo4_lg2.webp" alt="hero logo" width="250px" height="250px"/>
     <section class="head">
     <h1 class=" h1Text font-bold">I.O. Forge</h1>
     <h2 class=" h2Text ">Software Solutions</h2>
@@ -14,12 +14,12 @@ import HeaderLink from "./HeaderLink.astro";
     
     <section class="hText z-10 pl-10 mb-10">
      <ul class="subText h4Text text-left">
-      <li><h4>Data Analytics</h4></li>
-      <li><h4>Enterprise Resource Planning</h4></li>
-      <li><h4>Web Portals and Platforms</h4></li>
+      <li><h3>Data Analytics</h3></li>
+      <li><h3>Enterprise Resource Planning</h3></li>
+      <li><h3>Web Portals and Platforms</h3></li>
      </ul>
       </section>
-      <h4 class="h4Text"><HeaderLink href="#contact" class= "p-5 bg-slate-500 icon shadow-2xl">Contact</HeaderLink></h4>
+      <h4 class="h4Text icon"><HeaderLink href="#contact" class= "p-5 bg-slate-500 icon shadow-2xl">Contact</HeaderLink></h4>
 
   </section>
   <div><img loading="lazy" src="nlogo4_lg.webp" alt="Logo" width="250px" height="250px"/></div>
@@ -88,6 +88,9 @@ import HeaderLink from "./HeaderLink.astro";
         border-radius: 20%;
         
     }
+    20%{
+      opacity:0;
+    }
     
     100%{
         transform: translateY(-1000px) rotate(720deg);
@@ -100,12 +103,12 @@ import HeaderLink from "./HeaderLink.astro";
 
 /* Animated background */
 .background {
-    height:auto;
+    height:100vh;
     width:auto;
     top: 0;
     left: 0;
     
-    padding:5%;
+    padding:5vh;
     background: #334155;
     overflow: hidden;
 }
