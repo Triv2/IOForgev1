@@ -2,26 +2,42 @@
 import HeaderLink from "./HeaderLink.astro";
 ---
 <article id="/" class=" hero responsive background ">
-  <section class="center hero_container">
-    <section class="flex items-center z-10 top">
-    <img loading="lazy" src="logo.svg" alt="Logo" width="200px" height="200px"/>
-    <h1 class="hTitle m-10 h1Text">I.O. Forge</h1>
+  <section class="center hero_container ">
+    <section class="z-10 top mb-10">
+    <img loading="lazy" src="nlogo4_lg.webp" alt="hero logo" width="250px" height="250px"/>
+    <section class="head">
+    <h1 class=" h1Text font-bold">I.O. Forge</h1>
+    <h2 class=" h2Text ">Software Solutions</h2>
     </section>
-    <h2 class="hText z-10 h2Text">Software Solutions for Data Analytics and Enterprise Resource Planning</h2>
-    <HeaderLink href="#contact" class=" p-5 bg-slate-500 icon shadow-2xl m-10 z-10 h3Text">Contact</HeaderLink>
+    </section>
     
+    
+    <section class="hText z-10 pl-10 mb-10">
+     <ul class="subText h4Text text-left">
+      <li><h4>Data Analytics</h4></li>
+      <li><h4>Enterprise Resource Planning</h4></li>
+      <li><h4>Web Portals and Platforms</h4></li>
+     </ul>
+      </section>
+      <h4 class="h4Text"><HeaderLink href="#contact" class= "p-5 bg-slate-500 icon shadow-2xl">Contact</HeaderLink></h4>
+
   </section>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div><img loading="lazy" src="nlogo4_lg.webp" alt="Logo" width="250px" height="250px"/></div>
+  <div><img loading="lazy" src="nlogo4_lg.webp" alt="Logo" width="250px" height="250px"/></div>
+  <div><img loading="lazy" src="nlogo4_lg.webp" alt="Logo" width="250px" height="250px"/></div>
+  <div><img loading="lazy" src="nlogo4_lg.webp" alt="Logo" width="250px" height="250px"/></div>
+  <div><img loading="lazy" src="nlogo4_lg.webp" alt="Logo" width="250px" height="250px"/></div>
   
 </article>
 <style>
   section{
     color:aliceblue;
   }
+ .subText{
+  display:flex; 
+  flex-direction:column;
+  gap:20px;
+ }
   .hero_container{
     border-radius:10px;
     
@@ -32,9 +48,17 @@ import HeaderLink from "./HeaderLink.astro";
   }
  
   .top{
-      justify-content: space-around;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    align-content:center;
     
     }
+  .head{
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+  }
   .icon{
     border-radius:10px;
   }
@@ -48,20 +72,10 @@ import HeaderLink from "./HeaderLink.astro";
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   color:cadetblue
   }
-  .hTitle{
-    /* font-size: 80px; */
-    text-align:center;
-    width:100%;
-  }
-  .hText{
-    padding:5%;
-    text-align:center;
-  }
+  
+  
   p{
-    font-size:35px;
     color:rgb(235, 233, 233);
-    
-    padding:2%;
     border-radius:10px;
   }
 
@@ -103,7 +117,7 @@ import HeaderLink from "./HeaderLink.astro";
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    /* background: rgba(255, 255, 255, 0.2); */
     animation: animate 19s linear infinite;
     z-index:0;
     opacity:0;
